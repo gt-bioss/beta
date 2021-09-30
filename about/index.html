@@ -1,0 +1,216 @@
+<!doctype html><html><head>
+<title>À propos</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="À propos">
+<meta property="og:description" content="Le groupe Bioss est un groupe de travail scientifique, soutenu par le CNRS au travers des Groupes de recherche Informatique mathématique (GDR IM) et Bio-informatique moléculaire (GDR BiM), rassemblant la communauté des chercheurs et enseignants-chercheurs français autour de la modélisation des systèmes biologiques, thématique centrale de la biologie des systèmes à la frontière de l&rsquo;informatique fondamentale, des mathématiques discrètes (et plus généralement des mathématiques), avec la biologie moléculaire et la médecine.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://example.org/about/"><meta property="article:section" content>
+<meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=http://example.org/scss/journal.min.00c79014b5f74c9f22aefc8c73b4c19b0190e8e07b36dd23fe487925aea0014e.css integrity="sha256-AMeQFLX3TJ8irvyMc7TBmwGQ6OB7Nt0j/kh5Ja6gAU4=" media=screen>
+<link rel=stylesheet href=http://example.org/scss/dark-mode.min.d9bb6153c56800353f80d4d78a9ad21847bfa0f16dd33dce7a10d4b06b34a0ee.css integrity="sha256-2bthU8VoADU/gNTXiprSGEe/oPFt0z3OehDUsGs0oO4=" media=screen>
+<script src=/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script src=/js/toc.js></script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
+</head>
+<body>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=http://example.org/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item active" href=/about>
+À propos
+</a>
+<a class="a-block nav-link-item false" href=/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item false" href=/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+<div class=toc-content>
+<center>- TABLE -</center>
+<ul>
+<ul>
+<li>
+<a href=#biologie-des-syst%c3%a8mes onclick="onNavClick(`#biologie-des-systèmes-nav`)" id=biologie-des-systèmes-nav>
+Biologie des systèmes
+</a>
+</li>
+<li>
+<a href=#mod%c3%a9lisation-symbolique-des-syst%c3%a8mes-biologiques onclick="onNavClick(`#modélisation-symbolique-des-systèmes-biologiques-nav`)" id=modélisation-symbolique-des-systèmes-biologiques-nav>
+Modélisation symbolique des systèmes biologiques
+</a>
+</li>
+<li>
+<a href=#mots-cl%c3%a9s--contours onclick="onNavClick(`#mots-clés--contours-nav`)" id=mots-clés--contours-nav>
+Mots-clés / contours
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item active" href=/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item false" href=/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item false" href=/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/contact.html>
+Contact
+</a>
+<div class=toc>
+<div class=toc-content>
+<center>- TABLE -</center>
+<ul>
+<ul>
+<li>
+<a href=#biologie-des-syst%c3%a8mes onclick="onNavClick(`#biologie-des-systèmes-nav`)" id=biologie-des-systèmes-nav>
+Biologie des systèmes
+</a>
+</li>
+<li>
+<a href=#mod%c3%a9lisation-symbolique-des-syst%c3%a8mes-biologiques onclick="onNavClick(`#modélisation-symbolique-des-systèmes-biologiques-nav`)" id=modélisation-symbolique-des-systèmes-biologiques-nav>
+Modélisation symbolique des systèmes biologiques
+</a>
+</li>
+<li>
+<a href=#mots-cl%c3%a9s--contours onclick="onNavClick(`#mots-clés--contours-nav`)" id=mots-clés--contours-nav>
+Mots-clés / contours
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=http://example.org/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=http://example.org/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<div class=post>
+<div class=post-head-wrapper-text-only>
+<div class=post-title>
+À propos
+<div class=post-meta>
+</div>
+</div>
+</div>
+<div class=post-body-wrapper>
+<div class=post-body v-pre>
+<p>Le groupe Bioss est un groupe de travail scientifique, soutenu par le CNRS au travers des Groupes de recherche Informatique mathématique (GDR IM) et Bio-informatique moléculaire (GDR BiM), rassemblant la communauté des chercheurs et enseignants-chercheurs français autour de la modélisation des systèmes biologiques, thématique centrale de la biologie des systèmes à la frontière de l&rsquo;informatique fondamentale, des mathématiques discrètes (et plus généralement des mathématiques), avec la biologie moléculaire et la médecine.</p>
+<h2 id=biologie-des-systèmes>Biologie des systèmes</h2>
+<p>C&rsquo;est un domaine de recherche dont l&rsquo;objectif est de comprendre comment fonctionnent les systèmes biologiques dans leur ensemble, en intégrant différents niveaux d&rsquo;informations, et à partir de l’étude des relations et des interactions entre les composants de ces systèmes.</p>
+<p>Ce domaine est par nature interdisciplinaire, puisque pour répondre à des questions biologiques, il traite de problèmes liés à l’observation de la réponse cellulaire (analyse de données), à l’intégration de données pour l’identification d’interactions (méthodes statistiques, apprentissage), à la modélisation formelle et numérique du comportement du système (modèles formels, modèles symboliques, modèles numériques), à l’étude de modèles de processus cellulaires (mathématiques appliquées, informatique théorique), allant jusqu’à leur contrôle (automatique, vérification de modèles).</p>
+<p>Deux aspects doivent être pris en compte. Premièrement ces systèmes sont difficiles à observer et manipuler expérimentalement. Deuxièmement de multiples échelles spatiales et/ou temporelles doivent être prises en compte tant pour les acteurs (gènes, protéines, métabolites, organites, cellules, populations) que pour leurs interactions (transcription, transformations chimiques, signalisation, diffusion, échanges, communications entre cellule, signaux provenant de l’environnement). Ces deux caractéristiques génèrent de nouvelles questions de nature informatique et mathématiques qui sont au coeur des thématiques du groupe de travail.</p>
+<h2 id=modélisation-symbolique-des-systèmes-biologiques>Modélisation symbolique des systèmes biologiques</h2>
+<p>Cette thématique vise à développer des méthodes informatique et mathématiques facilitant la modélisation, l’analyse et la compréhension des systèmes biologiques dynamiques &ldquo;complexes. Ces développements méthodologiques particuliers, souvent utilisés en complément des méthodes de modélisation et d’analyse traditionnelles, sont motivés par le constat que les systèmes biologiques diffèrent des systèmes physiques par plusieurs aspects fondamentaux. En particulier, la modélisation, la spécification, le contrôle et la vérification de modèles qualitatifs, ainsi que l’étude de leurs invariants pour faire émerger des propriétés robustes y jouent un rôle central.</p>
+<p>En dehors d’une meilleure compréhension du fonctionnement des systèmes biologiques, des contributions plus théoriques sont également attendues. Parmi les principales questions on peut citer : En quoi les systèmes biologiques sont-ils formalisables ? Quels nouveaux mécanismes de transmission d&rsquo;information sont à l&rsquo;oeuvre en biologie moléculaire et cellulaire ? Mais également, qu&rsquo;est-ce que l&rsquo;informatique peut apporter à la biologie, au delà des approches de modélisation numérique ?</p>
+<h2 id=mots-clés--contours>Mots-clés / contours</h2>
+<p>Modélisation de systèmes biologiques ; Systèmes dynamiques discrets, continus et hybrides ; Systèmes formels ; Langages de modélisation ; Sémantique (y compris stochastique) ; Vérification de modèles ; Réduction, prédiction (sous incertitude) ; Inférence d’interactions et de règles à partir de données biologiques.</p>
+</div>
+</div>
+<nav class=post-pagination>
+<a class=newer-posts href=http://example.org/contact.html>
+Suivant<br>Nous contacter
+</a>
+<a class=older-posts>
+Précédent<br>Pas de post plus ancien.
+</a>
+</nav>
+<div class=post-comment-wrapper>
+</div>
+</div>
+</div>
+</div>
+</div><div id=single-column-footer>
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/js/journal.js></script>
+</body>
+</html>

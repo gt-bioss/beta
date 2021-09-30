@@ -1,0 +1,185 @@
+<!doctype html><html><head>
+<title>Séminaire mensuel virtuel (vendredi à 13h)</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="Séminaire mensuel virtuel (vendredi à 13h)">
+<meta property="og:description" content="Groupe de travail sur la biologie systémique symbolique">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://example.org/seminaires/"><meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=http://example.org/scss/journal.min.00c79014b5f74c9f22aefc8c73b4c19b0190e8e07b36dd23fe487925aea0014e.css integrity="sha256-AMeQFLX3TJ8irvyMc7TBmwGQ6OB7Nt0j/kh5Ja6gAU4=" media=screen>
+<link rel=stylesheet href=http://example.org/scss/dark-mode.min.d9bb6153c56800353f80d4d78a9ad21847bfa0f16dd33dce7a10d4b06b34a0ee.css integrity="sha256-2bthU8VoADU/gNTXiprSGEe/oPFt0z3OehDUsGs0oO4=" media=screen>
+<script src=/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
+</head>
+<body>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=http://example.org/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item false" href=/about>
+À propos
+</a>
+<a class="a-block nav-link-item active" href=/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item false" href=/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item false" href=/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item active" href=/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item false" href=/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/contact.html>
+Contact
+</a>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=http://example.org/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=http://example.org/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<a class=a-block>
+<div class="post-item-wrapper post-item-wrapper-no-hover">
+<div class="post-item post-item-no-gaps">
+<div class=post-item-info-wrapper>
+<div class="post-item-title post-item-title-small year">
+Séminaire mensuel virtuel (vendredi à 13h)
+</div>
+<p>Le séminaire a lieu le premier vendredi de chaque mois à 13h sur Zoom.</p>
+<p><a href="https://u-bordeaux-fr.zoom.us/j/86764096440?pwd=b01qOG04RTMvRWNOVHBYR1ZIbkVaUT09">URL Zoom</a></p>
+<ul>
+<li>Meeting ID: 867 6409 6440</li>
+<li>Passcode: 149120</li>
+</ul>
+<p>Utiliser ce <a href="https://calendar.google.com/calendar/u/0?cid=aDRvOW11NnBhcnR2OHFpNmtiMDhzN3Z1bGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">lien</a> pour intégrer l&rsquo;agenda partagé des sémaires Bioss dans votre agenda.</p>
+<iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FParis&src=aDRvOW11NnBhcnR2OHFpNmtiMDhzN3Z1bGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZnIuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4&color=%237986CB&showTitle=0&showTz=0&mode=MONTH&showCalendars=0&showTabs=0&showPrint=0&showNav=1" style="border:solid 1px #777" width=600 height=400 frameborder=0 scrolling=no></iframe>
+</div>
+</div>
+</div>
+</a>
+<a href=/seminaires/2021-10/ class=a-block>
+<div class=post-item-wrapper>
+<div class="post-item post-item-no-gaps">
+<div class=post-item-info-wrapper>
+<div class=post-item-title>
+Séminaire virtuel: 1er octobre 2021
+</div>
+<div class=post-item-summary>
+<p>Laura Cantini (IBENS / ENS Paris) et Sergio Corridore (Institut Curie / Paris)</p>
+<p>Plus d'info...</p>
+</div>
+</div>
+</div>
+</div>
+</a>
+<a href=/seminaires/2021-06/ class=a-block>
+<div class=post-item-wrapper>
+<div class="post-item post-item-no-gaps">
+<div class=post-item-info-wrapper>
+<div class=post-item-title>
+Séminaire virtuel: vendredi 4 juin 2021
+</div>
+<div class=post-item-summary>
+<p>Sabine Peres (LISN / Paris Saclay) et Léonard Hérault (Aix Marseille Université)</p>
+<p>Plus d'info...</p>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div id=single-column-footer>
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/js/journal.js></script>
+</body>
+</html>
