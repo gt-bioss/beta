@@ -1,9 +1,500 @@
-<!DOCTYPE html>
-<html>
-<head>
-        <meta http-equiv="refresh" content="0; URL=https://www.bioss-cnrs.fr/old/manif/jnbioss_201511/jnbioss201511.html">
+<!doctype html><html><head>
+<title>Journées annuelles du GT Bioss (2015, 1e édition)</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="Journées annuelles du GT Bioss (2015, 1e édition)">
+<meta property="og:description" content="Le 23 novembre 2015 à l&rsquo;université Paris Diderot">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.bioss-cnrs.fr/beta/manif/jnbioss_201511/jnbioss201511.html"><meta property="article:section" content="events">
+<meta property="article:published_time" content="2015-11-23T00:00:00+00:00">
+<meta property="article:modified_time" content="2015-11-23T00:00:00+00:00"><meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/beta/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/journal.min.e98aba1605f3a725fad0875a5584b620ed0fd58ea79d459f02fb560d7738fab4.css integrity="sha256-6Yq6FgXzpyX60IdaVYS2IO0P1Y6nnUWfAvtWDXc4+rQ=" media=screen>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/dark-mode.min.92e13ee85b2c4587b9a2c423bde35865b35fa7449a8e1babb34f5c66907a72e1.css integrity="sha256-kuE+6FssRYe5osQjveNYZbNfp0Sajhurs09cZpB6cuE=" media=screen>
+<script src=/beta/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script src=/beta/js/toc.js></script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
 </head>
 <body>
-Redirecting to <a href="/old/manif/jnbioss_201511/jnbioss201511.html">old website</a>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=https://www.bioss-cnrs.fr/beta/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block nav-link-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block nav-link-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+<p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=https://www.bioss-cnrs.fr/beta/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=https://www.bioss-cnrs.fr/beta/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<div class=post>
+<div class=post-head-wrapper-text-only>
+<div class=post-title>
+Journées annuelles du GT Bioss (2015, 1e édition)
+<div class=post-subtitle>
+Le <strong>23 novembre 2015</strong> à l&rsquo;université Paris Diderot
+</div>
+<div class=post-meta>
+</div>
+</div>
+</div>
+<div class=post-body-wrapper>
+<div class=post-body v-pre>
+<h3 id=informations-générales>Informations générales</h3>
+<p>Date : 23 novembre 2015</p>
+<p>Lieu : Amphithéâtre Turing, Bâtiment Sophie Germain, Université Paris
+Diderot, Paris.</p>
+<p>Organisateurs : Jean Krivine et Paul Ruet</p>
+<p>Pour sa première année d'existence, le GT Bioss organise la 1ère
+édition de ces journées annuelles (qui se tiendront cette année sur une
+journée). Ces journées se veulent être la rencontre annuelle des membres
+du groupe de travail "Biologie systémique symbolique", commun au GDR
+Infomatique mathémétique et au GDR Bio-informatique moléculaire.</p>
+<h3 id=programme>Programme</h3>
+<p><strong>09h00 - 10h00</strong> - <strong>Accueil</strong><br>
+<strong>10h00 - 11h00</strong> - <strong>Conférence plénière</strong> - Christine Brun -
+<em>Interactomes of multifunctional proteins</em><br>
+<strong>11h00 - 11h15</strong> - <strong>Café</strong> - <em>Mise en place Session 1 exposés courts</em><br>
+<strong>11h15 - 11h30</strong> - Célia Biane - <em>Interaction network game applied to
+drug prediction in precision medicine</em><br>
+<strong>11h30 - 11h45</strong> - Sucheendra Palaniappan - <em>Approximating the dynamics
+of the hybrid stochastic-deterministic apoptosis pathway</em><br>
+<strong>11h45 - 12h00</strong> - Adrien Rougny - <em>Two qualitative dynamics semantics
+for SBGN process description maps</em><br>
+<strong>12h00 - 12h15</strong> - François Fages - <em>Synthesizing configurable
+biochemical implementation of linear systems from their transfer
+function specifications</em><br>
+<strong>12h15 - 12h30</strong> - Nathalie Théret - <em>Microenvironment and activation
+of TGF-β</em><br>
+<strong>12h30 - 14h00</strong> - <strong>Déjeuner</strong><br>
+<strong>14h00 - 15h00</strong> - <strong>Conférence plénière</strong> - Oded Maler - <em>Dynamical
+systems biology</em><br>
+<strong>15h00 - 15h15</strong> - <strong>Café</strong> - <em>Mise en place Session 2 exposés courts</em><br>
+<strong>15h15 - 15h30</strong> - Vincent Danos - <em>Models of growth</em><br>
+<strong>15h30 - 15h45</strong> - Jérôme Feret - <em>Une approche algébrique pour
+détecter et utiliser les symmétries d'un modèle basé sur des règles de
+récriture</em><br>
+<strong>15h45 - 16h00</strong> - Adrien Basso-Blandin - <em>A knowledge representation
+meta-model for rule-based modelling of signalling networks</em><br>
+<strong>16h00 - 16h15</strong> - Loïc Paulevé - <em>Abstractions pour la dynamique des
+réseaux qualitatifs</em><br>
+<strong>16h15 - 16h30</strong> - Paul Ruet - <em>Negative local feedbacks in Boolean
+networks</em><br>
+<strong>16h30 - 16h45</strong> - Adrien Richard - <em>Simple dynamics on graphs</em><br>
+<strong>16h45 - 17h00</strong> - <strong>Café</strong> - <em>Mise en place Session 3 exposés courts</em><br>
+<strong>17h00 - 17h15</strong> - Carito Guziolowski - <em>Integrating omics data into
+large-scale biological networks</em><br>
+<strong>17h15 - 17h30</strong> - Gautier Stoll - <em>MaBoSS tool : modeling signaling
+network in a Boolean framework with continuous time. Principles and
+applications</em><br>
+<strong>17h30 - 17h45</strong> - Vincent Picard - <em>Analyse stationnaire des réseaux
+de réactions : systèmes de contraintes en modélisation stochastique</em><br>
+<strong>17h45 - 18h00</strong> - Virgile Andreani - <em>TBA</em>\</p>
+<h3 id=résumés>Résumés</h3>
+<p><strong>Virgile Andreani</strong> - <em>A stochastic model of metabolism and growth</em><br>
+It has been recently demonstrated that stochastic fluctuations in the
+expression level of metabolic enzymes can cause growth fluctuations, and
+that conversely, growth fluctuations can propagate back to perturb gene
+expression [1]. However, our quantitative understanding of these
+observations is limited. In particular, the specific contribution to the
+global phenotypic heterogeneity of these two intertwined processes in
+unclear. Our objective here is to propose a model that relates in a
+simple but quantitative manner cell metabolism, gene expression and
+growth, together with their temporal fluctuations. To do so, we will
+leverage on and extend the model of Weiße et al. [2] representing in
+an abstract manner the main aspects of the economy of a growing cell. In
+this talk I will present our strategy to extend the model.<br>
+[1] Kiviet et al. Stochasticity of metabolism and growth at the
+single-cell level, Nature, 2014, 514:376-379.<br>
+[2] Weiße et al. Mechanistic links between cellular trade-offs, gene
+expression, and growth, PNAS, 2015, 112(9):E1038-E1047.<br>
+<br>
+<strong>Adrien Basso-Blandin</strong> - <em>A knowledge representation meta-model for
+rule-based modelling of signalling networks</em><br>
+The study of cellular signalling pathways and their deregulation in
+disease states, such as cancer, is a large and extremely complex task.
+Indeed, these systems involve many parts and processes but are studied
+piecewise and their literatures and data are consequently fragmented,
+distributed and sometimes - at least apparently - inconsistent. This
+makes it extremely difficult to build significant explanatory models
+with the result that effects in these systems that are brought about by
+many interacting factors are poorly understood. In this context, we
+introduce a graph-based meta-model, attuned to the representation of
+cellular signalling networks, which aims to ease this massive cognitive
+burden on the rule-based curation process. This meta-model is a
+generalization of that used by Kappa and BNGL which allows for the
+flexible representation of knowledge at various levels of granularity.
+In particular, it allows us to deal with information which has either
+too little, or too much, detail with respect to the strict rule-based
+meta-model. Our approach provides a basis for the gradual aggregation of
+fragmented biological knowledge extracted from the literature into an
+instance of the meta-model from which we can define an automated
+translation into executable Kappa programs.<br>
+<br>
+<strong>Célia Biane</strong> - <em>Interaction network game applied to drug prediction
+in precision medicine</em><br>
+Precision medicine aims at the use, in the clinic, of the unique
+molecular profile of each patient to predict the risks and benefits of
+treatments. This approach would be particularly helpful in the case of
+complex diseases such as cancer, where only a fraction of patients are
+responsive to drugs while others can exhibit severe side-effects. The
+field is looking forward for new computational methods guiding clinical
+decision-making toward the best therapy for the patient. In the endeavor
+of establishing a causal relationship between molecular profiles and
+clinical phenotypes of patients, network medicine studies the cause of
+diseases on the molecular interaction networks of patients. In these
+networks molecules are represented as nodes and interactions between
+these molecules are represented as edges. In this context, the
+prediction of therapies results from a decision-making process based on
+the dynamics of the network. We propose to study the impacts of disease
+and treatment on the dynamics of molecular networks in order to predict
+beneficial therapies. We developed a computational model coupling two
+theoretical frameworks: game theory to model decision-making and Boolean
+models of dynamics to represent the evolution of the patient's
+molecular interaction system. We applied the model to best therapeutic
+strategy prediction in the case of breast cancer.<br>
+<br>
+<strong>Christine Brun</strong> - <em>Interactomes of multifunctional proteins (Keynote
+talk)</em><br>
+<br>
+<strong>Vincent Danos</strong> - <em>Models of growth</em><br>
+<br>
+<strong>François Fages</strong> - <em>Synthesizing configurable biochemical
+implementation of linear systems from their transfer function
+specifications</em><br>
+<br>
+<strong>Jérôme Feret</strong> - <em>Une approche algébrique pour détecter et utiliser
+les symmétries d'un modèle basé sur des règles de récriture</em><br>
+Nous proposons de décrire des groupes de transformations qui opèrent sur
+des graphes à sites, et montrons rapidement sous quelles hypothèses ils
+induisent diverses formes de bisimulations sur diverses sémantiques de
+Kappa.<br>
+<br>
+<strong>Oded Maler</strong> - <em>Dynamical systems biology (Keynote talk)</em><br>
+In this talk I argue that progress in Biology requires, among other
+things, a more modern approach to modeling and analysis of dynamical
+models. Such models should not be restricted to classical dynamical
+systems but also involve concepts and ideas from discrete-event
+dynamical systems (automata) and hybrid (discrete-continuous) systems. I
+will present some recent techniques for exploring the dynamics of
+under-determined systems, that is, systems that admit uncertainty in
+initial conditions, parameters and environmental conditions. These
+techniques, inspired by formal verification, can be used to assess the
+robustness of proposed models and increase our confidence in their
+plausibility.<br>
+<br>
+<strong>Sucheendra Palaniappan</strong> - <em>Approximating the dynamics of the hybrid
+stochastic-deterministic apoptosis pathway</em><br>
+Modeling and analysis of the dynamics of biological systems while
+accounting for single cell fluctuations is important. In particular,
+there has been recent work on a hybrid stochastic-deterministic (HSD)
+model of TRAIL induced apoptosis that combines a deterministic signal
+transduction modeland a stochastic model for protein turnover that can
+explain fractional killing and predict the time dependent evolution of
+cell resistance to TRAIL. While this model is extremely useful for
+analyzing TRAIL induced apoptosis by drawing simulations in a single
+cell setting, it can be limiting in cases when we want to analyse the
+system in a multi-scale setting (say modeling a spheroid of millions of
+cells at larger time horizon for clinical trials). In such cases,
+simulating the original model for repeated analysis tasks can become
+extremely time consuming due to the scale of the resultant system.
+Instead, one could directly approximate the dynamics of the underlying
+system as an intermediate level behavioral model and use this
+approximation instead. In this talk, we will present results describing
+a minimalist discrete appromixation (Dynamic Bayesian Networks (DBNs) )
+of the dynamics of the HSD model. We will describe how analysis tasks on
+the original HSD model translates to probabilistic inference tasks on
+the DBN. We will also describe several algorithmic improvements we make
+over existing analysis methods on DBNs in general.<br>
+<br>
+<strong>Loïc Paulevé</strong> - <em>Abstractions pour la dynamique des réseaux
+qualitatifs</em><br>
+Un rapide aperçu de résultats et perspectives reposant sur des
+techniques d'interprétation abstraite pour appréhender la dynamique des
+réseaux booléens et discrets à grande échelle : réduction et
+vérification de modèles, prédiction de mutations, reprogrammation
+cellulaire...<br>
+<br>
+<strong>Vincent Picard</strong> - <em>Analyse stationnaire des réseaux de réactions :
+systèmes de contraintes en modélisation stochastique</em><br>
+L'étude de la dynamique des réseaux de réactions est un enjeu majeur de
+la biologie des systèmes. Cela peut être réalisé de deux manières : soit
+de manière déterministe à l'aide d'équations différentielles, soit de
+manière probabiliste à l'aide de chaînes de Markov. Dans les deux cas,
+un problème majeur est celui de la détermination des lois cinétiques
+impliquées et l'inférence de paramètres cinétiques associés. Pour cette
+raison, l'étude directe de grands réseaux de réactions est impossible.
+Dans le cas de la modélisation déterministe, ce problème peut-être
+contourné à l'aide d'une analyse stationnaire du réseau. Une méthode
+connue est celle de l'analyse des flux à l'équilibre (FBA) qui permet
+d'obtenir des systèmes de contraintes linéaires à partir
+d'informations sur les pentes moyennes des trajectoires. Dans cet
+exposé je présenterai des pistes pour étendre ces approches dans le
+contexte stochastique en déduisant des contraintes non nécessairement
+linéaires à partir d'informations sur les moments (moyennes, variances,
+covariances) d'un ensemble de trajectoires.<br>
+<br>
+<strong>Adrien Richard</strong> - <em>Simple dynamics on graphs</em><br>
+Biological networks, such gene or neural networks, are often modeled by
+finite dynamical systems, that is, dynamical systems where each variable
+evolves in a finite interval of integer A. In this presentation, we
+address the following question: does the interaction graph of a finite
+dynamical system can force this system to have a "complex" dynamics ?
+We provide a negative answer when |A|>2 by proving that, for every
+signed digraph G, there exists a finite dynamical with interaction graph
+G that converges toward a unique fixed point in logarithmic time. The
+boolean case |A|=2 is more difficult, and we provide partial answers
+instead. For instance, given an unsigned digraph G, we prove that if G
+contains a directed wheel (resp. is symmetric), there exists a boolean
+system with interaction graph G that converges toward a unique fixed
+point in linear time (resp. constant time).<br>
+<br>
+<strong>Adrien Rougny</strong> - <em>Two qualitative dynamics semantics for SBGN process
+description maps</em><br>
+Qualitative dynamics semantics allow to model large reaction networks
+with unknown kinetic parameters. In this work, we present two
+qualitative dynamics semantics for reaction networks formalized into the
+SBGN Process Description language (SBGN-PD). These two semantics, namely
+the general semantics and the stories semantics, allow to model any
+SBGN-PD map into an automata network, that can then be simulated to
+catch the main dynamical features of the network. While the general
+semantics refines the standard Boolean semantics of reaction networks by
+taking into account all the main features of SBGN-PD, the stories
+semantics allows to model several molecules of a network by a unique
+variable, reducing in this way the size of the models. We present those
+two semantics and compare them on a large biological network example,
+the E2F/RB pathway.<br>
+<br>
+<strong>Paul Ruet</strong> - <em>Negative local feedbacks in Boolean networks</em><br>
+<strong>Gautier Stoll</strong> - <em>MaBoSS tool: modeling signaling network in a
+Boolean framework with continuous time. Principles and applications</em><br>
+MaBoSS is a C++ software, that models signaling network, in a Boolean
+framework with continuous time. Influences between nodes is given in a
+specific language, that mixes Boolean logic and real number operators,
+in order to specify a rate of activation and a rate of inhibition for
+each node. Each of these rates depends on the Boolean states of the
+other nodes of the network. MaBoSS applies a continuous time Markov
+process to a model described in this language, and produces
+time-dependent probabilities and estimates asymptotic behavior. MaBoSS
+has been applied to several biological situations (cell cycle, cell
+fate, senescence/geroconversion). Quantitative modeling results can be
+confronted to experimental data, resulting in interesting
+interpretations. MaBoSS modeling framework can be interpreted as a
+method between ODE and Boolean modeling.<br>
+<br>
+<strong>Nathalie Théret</strong> - <em>Microenvironment and activation of TGF-β</em><br>
+Transforming growth factor TGF-β plays pivotal roles in numerous
+biological processes including tissue homeostasis and morphogenesis, and
+is implicated in a number of pathological processes including
+inflammation, fibrosis and cancer. Targeting the deleterious effects of
+TGF-β without affecting its physiological role is the common goal of
+therapeutic strategies. While several strategies based on blocking TGF-β
+antibodies or small inhibitors of TGF-β receptors have been
+investigated, the impact of the cellular microenvironment that triggers
+and regulates TGF-β bioavailability has not been taken into account so
+far. Indeed, TGF-β is synthesized in large amount and exists as an
+inactive molecule, latent TGF-β (LAP-TGF-β), which needs to be activated
+and released from the extracellular matrix network. Changes in the
+cellular microenvironment in pathological situations are expected to
+play a direct and important role in the alteration of TGF-β activity. As
+a result, the complexity of microenvironment networks requires modeling
+approaches to understand and predict how TGF-β activation is regulated
+and ultimately identify putative targets suitable for future therapy. To
+model the dynamic of TGF-β activation out of the cell, we use a
+rule-based modeling approach (Kappa language), which consists in
+describing explicitly the biochemical structure of chemical species as
+graphs of connected proteins. Rewriting rules encoding complexation,
+decomplexation, and post-translational modifications are well suited for
+describing the extracellular matrix network that regulates TGF-β
+activation. Literature curation (116 publications from 1988 to 2014)
+allowed us to collect information relative to the regulation of TGF-β
+activation in the extracellular matrix and to elaborate a model
+integrating 31 proteins and 96 rules. Using proteomic data to
+parameterize the model, we investigated the sensitivity of TGF-β release
+to changes in microenvironment. Such program will provide a significant
+input in our understanding of the dynamics of TGF-β activation regulated
+by microenvironment. We believe that the extracellular microenvironment
+is a major parameter to consider in future therapeutic approaches
+targeting TGF-β in cancer.</p>
+<h3 id=participants>Participants</h3>
+<p>Patrick AMAR, LRI, Université Paris Sud<br>
+Virgile ANDREANI, ENS<br>
+Paolo Ballarini, MICS, École centrale Paris<br>
+Adrien BASSO-BLANDIN, LIP, ENS-Lyon<br>
+Éléonore BELLOT, ENS<br>
+Célia BIANE, IBISC, Université d'Évry - Val d'Essonne<br>
+Marc BOUFFARD, LRI, Université Paris Sud<br>
+François BOULIER, CRISTAL, Université de Lille<br>
+Christine BRUN, TAGC, CNRS Marseille<br>
+Vincent DANOS, DIENS, CNRS Paris<br>
+Victorien DELANNÉE, IRISA, Université de Rennes<br>
+Franck DELAPLACE, IBISC, Université d'Évry - Val d'Essonne<br>
+Cinzia DI GIUSTO, I3S, Université de Nice - Sophia Antipolis<br>
+Mohamed ELATI, ISSB, Université d'Évry - Val d'Essonne<br>
+François FAGES, INRIA Saclay<br>
+Éric FANCHON, TIMC-IMAG, CNRS Grenoble<br>
+Jérôme FERET, INRIA Paris<br>
+Enrico FORMENTI, I3S, Université de Nice - Sophia Antipolis<br>
+Christine FROIDEVAUX, LRI, Université Paris Sud<br>
+Olivier GANDRILLON, LBMC, CNRS Lyon<br>
+Carito GUZIOLOWSKI, IRCCyN, École centrale de Nantes<br>
+Adrien HUSSON<br>
+Jean KRIVINE, PPS, CNRS Paris<br>
+Jonathan LAURENT, ENS<br>
+Pascale LE GALL, MICS, École centrale Paris<br>
+Cédric LHOUSSAINE, CRISTAL, Université de Lille<br>
+Guillaume MADELAINE, CRISTAL, Université de Lille<br>
+Morgan MAGNIN, IRCCyN, École centrale de Nantes<br>
+Oded Maler, VERIMAG, CNRS Grenoble<br>
+Tarek MELLITI, IBISC, Université d'Évry - Val d'Essonne<br>
+Joachim NIEHREN, INRIA Lille<br>
+Sucheendra PALANIAPPAN, IRISA, INRIA Rennes<br>
+Loïc PAULEVÉ, LRI, CNRS Orsay<br>
+Kévin PERROT, LIF, Université d'Aix-Marseille<br>
+Vincent PICARD, LINA, Université de Nantes<br>
+Damien REGNAULT, IBISC, Université d'Évry - Val d'Essonne<br>
+Élisabeth REMY, I2M, CNRS Marseille<br>
+Adrien RICHARD, I3S, CNRS Nice - Sophia Antipolis<br>
+Adrien ROUGNY, LRI, Université Paris Sud<br>
+Olivier ROUX, IRCCyN, École centrale de Nantes<br>
+Paul RUET, PPS, CNRS Paris<br>
+Sylvain SENÉ, LIF, Université d'Aix-Marseille<br>
+Anne SIEGEL, IRISA, CNRS Rennes<br>
+Pierre SIEGEL, LIF, Université d'Aix-Marseille<br>
+Gautier STOLL, Institut Curie Paris<br>
+Guillaume TERRADOT, DIENS, ENS<br>
+Nathalie THÉRET, IRISA, INSERM Rennes<br>
+Serghei VERLAN, LACL, Université Paris Est Créteil\</p>
+<hr width=100% id=EOF>
+<p style=color:#777>Dernière modification le 23/11/2015</p>
+</div>
+</div>
+<nav class=post-pagination>
+<a class=newer-posts href=https://www.bioss-cnrs.fr/beta/manif/jnbioss_201607/jnbioss201607.html>
+Suivant<br>Journées annuelles du GT Bioss (2016, 2e édition)
+</a>
+<a class=older-posts href=https://www.bioss-cnrs.fr/beta/manif/nantes_201509/nantes201509.html>
+Précédent<br>1st Bioss Workshop: "Systemic Symbolic Biology"
+</a>
+</nav>
+<div class=post-comment-wrapper>
+</div>
+</div>
+</div>
+</div>
+</div><div id=single-column-footer><p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/beta/js/journal.js></script>
 </body>
 </html>

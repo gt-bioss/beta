@@ -1,0 +1,321 @@
+\documentclass[10pt, a4paper]{article} 
+
+\usepackage[margin=25mm,headheight=10mm,footskip=15mm]{geometry}
+%\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage[british]{babel}
+%\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage[svgnames]{xcolor}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage{mathrsfs}
+\usepackage{fancyhdr}
+
+\DeclareGraphicsExtensions{.png}
+
+\renewcommand{\floatpagefraction}{0.90}
+
+\makeatletter
+\renewcommand{\section}{\@startsection {section}{1}{\z@}%
+             {-3.5ex \@plus -1ex \@minus -.2ex}%
+             {.3ex \@plus.2ex}%
+             {\centering\normalfont\large\bfseries}}
+\makeatother
+
+\makeatletter
+\renewcommand{\subsection}{\@startsection {section}{2}{\z@}%
+             {-3.5ex \@plus -1ex \@minus -.2ex}%
+             {.3ex \@plus.2ex}%
+             {\centering\normalfont\normalsize\bfseries}}
+\makeatother
+
+\newcolumntype{M}[1]
+	{>{#1\hspace{0pt}\arraybackslash}m{0.5\textwidth}}
+
+\newcommand{\BB}{\mathbb{B}}
+\newcommand{\Bn}{\mathbb{B}^n}
+
+\pagestyle{fancy} 
+\DeclareGraphicsExtensions{.png}
+
+% Marges
+
+\renewcommand{\floatpagefraction}{0.90}
+
+% En-tête de page
+\renewcommand{\headrulewidth}{1pt}
+\fancyhead{\includegraphics[height=13mm]{logoIM.png}\hfill\includegraphics[height=15mm]{logoCNRS.png}\hfill\includegraphics[height=12mm]{logoBIM.pdf}}
+\fancyfoot{}
+
+
+\begin{document}
+\vspace*{4mm}
+\centerline{\Large \bf Journées annuelles du GT Bioss}\bigskip
+\centerline{(\large \bf GDR IM -- GDR BIM)}
+\centerline{\large \bf 1er et 2 juillet 2016}\bigskip
+
+\centerline{
+	\begin{tabular}{p{.3\textwidth}p{.3\textwidth}p{.3\textwidth}}
+		& \hrulefill &
+	\end{tabular}
+}\medskip\medskip
+
+\section*{Participants}\medskip\medskip\medskip
+
+\centerline{
+	\begin{tabular}{|p{.3\textwidth}|p{.7\textwidth}|l|}
+		\hline
+		Qui? & D'où? & Là?\\
+		\hline\hline
+		Jalouli ACHREF & Univ. Limoges & \\\hline
+		Émilie ALLART & CRISTAL, Univ. Lille & \\\hline
+		Adel Amar AMOURI & Dpt. de bio., Université d'Oran & \\\hline
+		Emna BEN ABDALLAH & IRCCyN, EC Nantes & \\\hline
+		Adrien BASSO-BLANDIN & LIP, ENS-Lyon & \\\hline
+		Grégory BATT & Lifeware, INRIA Saclay & \\\hline
+		Guillaume BEAUMONT & IPS2, Univ. Paris Sud & \\\hline
+		Emmanuelle BECKER & IRSET, Univ. Rennes & \\\hline
+		Hugues BERRY & Beagle, INRIA Lyon & \\\hline
+		Arnaud BONNAFFOUX & LBMC, ENS-Lyon & \\\hline
+		Ferdinanda CAMPORESI & Dpt. d'info., ENS & \\\hline
+		Thomas COKELAER & Biomics, Inst. Pasteur & \\\hline
+		Victorien DELANNÉE & IRISA, Univ. Rennes & \\\hline
+		Ronan DUCHESNE & LBMC, ENS-Lyon & \\\hline
+		Maxime FOLSCHETTE & I3S, Univ. Nice-Sophia & \\\hline
+		Enrico FORMENTI & I3S, Univ. Nice-Sophia & \\\hline
+		Olivier GANDRILLON & LBMC, CNRS Lyon & \\\hline
+		Nils GIORDANO & IBIS, INRIA Grenoble & \\\hline
+		Dan GOREAC & LAMA, Univ. Marne-la-Vallée & \\\hline
+		Carito GUZIOLOWSKI & IRCCyN, EC Nantes & \\\hline
+		Pierre GUILLON & I2M, CNRS Marseille & \\\hline
+		Russ HARMER & LIP, ENS-Lyon & \\\hline
+		Ulysse HERBACH & LBMC, ENS-Lyon & \\\hline
+		Marcelline KAUFMAN & Dpt. de bio. théor., Univ. Bruxelles & \\\hline
+		Cédric LHOUSSAINE & CRISTAL, Univ. Lille & \\\hline
+		Guillaume MADELAINE & CRISTAL, Univ. de Lille & \\\hline
+		Bertrand MIANNAY & IRCCyN, EC Nantes & \\\hline
+		Jean-Michel MULLER & LIP, CNRS Lyon & \\\hline
+		Loïc PAULEVÉ & LRI, CNRS Orsay & \\\hline
+		Kévin PERROT & LIF, Univ. Aix-Marseille & \\\hline
+		Sylvain PRIGENT & Sysbio, Univ. Chalmers & \\\hline
+		Élisabeth REMY & I2M, CNRS Marseille & \\\hline
+		Adrien RICHARD & I3S, CNRS Nice-Sophia & \\\hline
+		Marie-France SAGOT & ERABLE, INRIA Lyon & \\\hline
+		Nicolas SCHABANEL & IRIF, CNRS Paris & \\\hline
+		Sylvain SENÉ & LIF, Univ. Aix-Marseille & \\\hline
+		Anne SIEGEL & IRISA, CNRS Rennes & \\\hline
+		Laurent TRILLING & TIMC-IMAG, Univ. Grenoble & \\\hline
+		Jean-Yves TROSSET & BIRL, SupBioTech & \\\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+	\end{tabular}
+}
+
+\pagebreak
+
+\centerline{
+	\begin{tabular}{|p{.3\textwidth}|p{.7\textwidth}|l|}
+		\hline
+		Qui? & D'où? & Là?\\
+		\hline\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+	\end{tabular}
+}
+
+\pagebreak
+
+\centerline{
+	\begin{tabular}{|p{.3\textwidth}|p{.7\textwidth}|l|}
+		\hline
+		Qui? & D'où? & Là?\\
+		\hline\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+	\end{tabular}
+}
+
+\pagebreak
+
+\centerline{
+	\begin{tabular}{|p{.3\textwidth}|p{.7\textwidth}|l|}
+		\hline
+		Qui? & D'où? & Là?\\
+		\hline\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\
+		\textcolor{White}{a} & \textcolor{White}{a} & \textcolor{White}{a}\\	\hline
+	\end{tabular}
+}
+
+
+\end{document}

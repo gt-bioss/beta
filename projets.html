@@ -1,9 +1,306 @@
-<!DOCTYPE html>
-<html>
-<head>
-        <meta http-equiv="refresh" content="0; URL=https://www.bioss-cnrs.fr/old/projets.html">
+<!doctype html><html><head>
+<title>Contrats et projets en lien avec le groupe</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="Contrats et projets en lien avec le groupe">
+<meta property="og:description" content="Sont présentés ici par ordre antichronologique et de manière certainement non exhaustive les projets d'envergure nationale et internationale des différents acteurs du groupe Bioss.
+⚠️ Cette page doit être remise à jour !
+Projets nationaux  ANR-FNR AlgoReCell 2016 - 36 mois (programme générique)
+Titre: Computational Models and Algorithms for the Prediction of Cell Reprogramming Determinants with High Efficiency and High Fidelity
+Partenaires : LRI (Univ. Paris-Sud / CNRS); LSV/Inria Saclay; Institut Curie; FSTC Life (Univ.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.bioss-cnrs.fr/beta/projets.html"><meta property="article:section" content>
+<meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/beta/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/journal.min.e98aba1605f3a725fad0875a5584b620ed0fd58ea79d459f02fb560d7738fab4.css integrity="sha256-6Yq6FgXzpyX60IdaVYS2IO0P1Y6nnUWfAvtWDXc4+rQ=" media=screen>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/dark-mode.min.92e13ee85b2c4587b9a2c423bde35865b35fa7449a8e1babb34f5c66907a72e1.css integrity="sha256-kuE+6FssRYe5osQjveNYZbNfp0Sajhurs09cZpB6cuE=" media=screen>
+<script src=/beta/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script src=/beta/js/toc.js></script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
 </head>
 <body>
-Redirecting to <a href="/old/projets.html">old website</a>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=https://www.bioss-cnrs.fr/beta/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block nav-link-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item active" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block nav-link-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+<p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item active" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=https://www.bioss-cnrs.fr/beta/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=https://www.bioss-cnrs.fr/beta/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<div class=post>
+<div class=post-head-wrapper-text-only>
+<div class=post-title>
+Contrats et projets en lien avec le groupe
+<div class=post-meta>
+</div>
+</div>
+</div>
+<div class=post-body-wrapper>
+<div class=post-body v-pre>
+<p>Sont présentés ici par ordre antichronologique et de manière certainement non exhaustive les projets d'envergure nationale et internationale des différents acteurs du groupe Bioss.</p>
+<p>⚠️ Cette page doit être remise à jour !</p>
+<h2 id=projets-nationaux>Projets nationaux</h2>
+<ul>
+<li>ANR-FNR AlgoReCell 2016 - 36 mois (programme générique)<br>
+Titre: Computational Models and Algorithms for the Prediction of
+Cell Reprogramming Determinants with High Efficiency and High
+Fidelity<br>
+Partenaires : LRI (Univ. Paris-Sud / CNRS); LSV/Inria Saclay;
+Institut Curie; FSTC Life (Univ. Luxembourg); FSTC CSC (Univ.
+Luxembourg); Luxembourg Centre for Systems Biomedicine (Univ.
+Luxembourg)<br>
+<a href=http://algorecell.lri.fr>http://algorecell.lri.fr</a></li>
+<li>ANR CenTuri 2016 - 120 mois (programme IA Instituts Convergences)<br>
+Titre : Centre Turing des systèmes vivants<br>
+Partenaires: IBDM, CIML, INMED, I2M, CPT, CINAM, Fresnel, IRPHé,
+IUSTI, LIF (Univ. Aix-Marseille / CNRS), LAI (Univ. Aix-Marseille /
+APHM / INSERM), Bio-AFM, TAGC (Univ. Aix-Marseille / INSERM), M2P2
+(École centrale Marseille / Univ. Aix-Marseille / CNRS) et CIPHE
+(Univ. Aix-Marseille / INSERM / CNRS)</li>
+<li>ANR MEMIP 2016 - 48 mois (programme générique)<br>
+Titre : Modèles à effets mixtes de processus intracellulaires :
+méthodes, outils et applications<br>
+Partenaires : Lifeware (Inria Saclay), MSC (Univ. Paris Diderot /
+CNRS), IBIS (Inria Grenoble / Univ. Grenoble) et XPOP (Inria Saclay
+/ École Polytechnique)</li>
+<li>ANR ICycle 2016 -- ?? mois (programme générique)<br>
+Titre : Interconnexion et contrôle de deux oscillateurs biologiques
+dans des cellules mammaliennes<br>
+Partenaires : Biocore (INRIA Sophia), iBV (Univ. Nice - Sophia /
+CNRS) et Maiage-Biosys (INRA Jouy-en-Josas)</li>
+<li>ANR HYCLOCK 2015 - 48 mois (programme "Une nouvelle représentation
+du vivant")<br>
+Titre : Modélisation hybride formelle du temps pour la biologie des
+horloges circadiennes et la chronopharmacologie<br>
+Partenaires : iBV, I3S (Nice), INSERM UMR-S776 (Orsay), IRCCyN
+(Nantes), Lifeware (INRIA Rocquencourt)\</li>
+<li>ANR SAMOSA 2014 - 48 mois (programme BIOADAPT)<br>
+Titre : Synechococcus as a model genus for studying adaptation of
+marine phytoplankton to environmental changes<br>
+Partenaires : ABIMS (Station Roscoff), LINA (Univ. Nantes), AD2M
+(Univ. européenne Bretagne)</li>
+<li>ANR STOCH-MC 2014 - 48 mois (programme blanc SIMI 2)<br>
+Titre :<br>
+Partenaires : IRISA (INRIA Rennes), Lifeware (INRIA Rocquencourt),
+LIAFA (Univ. Paris 7), LaBRI (Univ. Bordeaux)</li>
+<li>ANR CADMIDIA 2013 - 48 mois (programme CESA)<br>
+Titre : Cadmium et diabète<br>
+Partenaires : TIMC-IMAG (Univ. Grenoble), VERIMAG (Univ. Grenoble),
+CBM (CEA Grenoble), LBFA (INSERM Grenoble)</li>
+<li>ANR Iceberg 2012 - 60 mois (programme IA Bio-informatique)<br>
+Titre : Des modèles de population aux populations de modèles:
+observation, modélisation et contrôle de l&rsquo;expression génique au
+niveau de la cellule unique<br>
+Partenaires : Lifeware (INRIA Rocquencourt), LIFL (Univ. Lille), PPS
+& IJM & MSC (Univ. Paris 7), CGMC (Univ. Lyon)</li>
+<li>ANR RESET 2012 - 48 mois (programme IA Bio-informatique)<br>
+Titre : Eteindre et rallumer la machinerie d'expression génique
+chez les bactéries: de modèles mathématiques aux applications
+biotechnologiques<br>
+Partenaires : IBIS (INRIA Grenoble), LAPM (Univ. Grenoble), LIPhy
+(Univ. Grenoble), BGE (CEA Grenoble), Génétique végétale (INRA),
+BIOCORE (INRIA Sophia), Metabolic Explorer\</li>
+<li>ANR Facteur 4 2012 - 36 mois (programme Bio-ME)<br>
+Titre : Amélioration non OGM des performances de microalgues<br>
+Partenaires : BIOCORE (INRIA Sophia), OOV (Univ. Paris 6), PBA
+(IFREMER)\</li>
+<li>ANR FatInteger 2012 - 36 mois (programme blanc SVSE 7)<br>
+Titre : Recherche de régulateurs clefs de la plasticité lipidique
+chez deux espèces monogastriques majeures (porc et poule) en
+combinant des données haut débit et des approches statistique,
+bioinformatique et phylogénique<br>
+Partenaires : IRISA (CNRS Bretagne), GARen & SENAH & URA (INRA),
+LMA-IRMAR (AGROCAMPUS Ouest)\</li>
+<li>ANR MiRNAdapt 2012 - 36 mois (programme blanc SVSE 6)<br>
+Titre : MicroARN et plasticité phénotypique<br>
+Partenaires : IRISA (CNRS Bretagne), IGH (CNRS Languedoc), BiO3P
+(INRA)\</li>
+<li>ANR IDEALG 2011 - 96 mois (programme IA Santé-Biotechnologies)<br>
+Titre : Étude génomique et post-génomique des algues pour le
+développement de nouveaux outils et méthodes permettant d&rsquo;identifier
+et sélectionner des populations « ressource » locales ayant un
+intérêt industriel<br>
+Partenaires : LBI2M (Univ. Paris 6), IRISA (CNRS Bretagne), UFIP
+(Univ. Nantes), CEVA, COS (ÉNSC Rennes), ALEOR, LBCM (Univ. Bretagne
+sud), C-WEED, IFREMER Brest, BEZHIN ROSKO, FRANCE HALIOTIS,
+AGROCAMPUS Ouest, AMURE (Univ Bretagne occidentale), LBE (INRA),
+DuPont\</li>
+<li>ANR STOCHAGENE 2011 - 48 mois (programme blanc SVSE 6)<br>
+Titre : Rôle de la dynamique chromatinienne dans la stochasticité de
+l&rsquo;expression génique dans des cellules d&rsquo;eucaryotes supérieurs<br>
+Partenaires : CGPMC (Univ. Lyon), LIRIS (INSA-Lyon), U951 (INSERM
+Paris XII)\</li>
+<li>ANR BioTempo 2011 - 42 mois (programme Blanc SIMI 2)<br>
+Titre : Langages, concepts de temps et modèles hybrides pour
+l'analyse de modèles incomplets en biologie moléculaire<br>
+Partenaires : IRISA (CNRS Bretagne), I3S (CNRS Côte d'azur), LINA
+(Univ. Nantes), IRCCyN (É.C. Nantes), Lifeware (INRIA Rocquencourt),
+DIMNP (Univ. Montpellier), LBI2M (Univ. Paris 6), SeRAIC (Univ.
+Rennes), Mathomics (Univ. Santiago), Institut für Informatik (Univ.
+Postdam), Institut du thorax (Univ. Nantes)\</li>
+<li>ANR SYNBIOTIC 2010 - 48 mois (programme blanc SIMI 3)<br>
+Titre : Systèmes biologiques de synthèse : de la conception à la
+compilation<br>
+Partenaires : IBISC (Univ. Évry), LACL (Univ. Créteil), CREA ISC-PIF
+(CNRS IDF Ouest et Nord)\</li>
+<li>ANR GeMCo 2010 - 36 mois (programme blanc SIMI 2)<br>
+Titre : Réduction, validation expérimentale et contrôle de modèles
+de la machinerie d'expression génique chez E. Coli<br>
+Partenaires : IBIS (INRIA Grenoble), BIOCORE (INRIA Sophia), LAPM
+(Univ. Grenoble)\</li>
+</ul>
+<h2 id=projets-internationaux>Projets internationaux</h2>
+<ul>
+<li>ERC Advanced grant RULE 2013 - 60 mois (programme FP7-IDEAS-ERC)<br>
+Titre : Rule-based modelling<br>
+Partenaires : Univ. Édimbourg</li>
+<li>EU EvoEvo 2013 - 36 mois (programme FP7-ICT)<br>
+Titre : Evolution of evolution<br>
+Partenaires : BEAGLE (INRIA Grenoble), LAPM (Univ. Grenoble), Univ.
+Utrecht (Pays-Bas), Univ. York (U.K), CSIC (Spain)\</li>
+<li>ERC Advanced grant SISYPHE 2010 - 60 mois (programme FP7-IDEAS-ERC)<br>
+Titre : Species identity and symbiosis formally and experimentally
+explored<br>
+Partenaires : BAMBOO (INRIA Grenoble)\</li>
+</ul>
+<h2 id=projets-régionaux>Projets régionaux</h2>
+<ul>
+<li>PACA FRI 2015 - 24 mois (programme APEX)<br>
+Titre : Fondements des réseaux d'interactions<br>
+Partenaires : LIF, I2M (Univ. Aix-Marseille), I3S (Univ.
+Nice-Sophia)\</li>
+</ul>
+</div>
+</div>
+<nav class=post-pagination>
+<a class=newer-posts href=https://www.bioss-cnrs.fr/beta/manif/cirm_201505/cirm201505.html>
+Suivant<br>Journées thématiques "Méthodes de réduction de modèles"
+</a>
+<a class=older-posts href=https://www.bioss-cnrs.fr/beta/membres.html>
+Précédent<br>Membres
+</a>
+</nav>
+<div class=post-comment-wrapper>
+</div>
+</div>
+</div>
+</div>
+</div><div id=single-column-footer><p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/beta/js/journal.js></script>
 </body>
 </html>

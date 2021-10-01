@@ -1,0 +1,223 @@
+<!doctype html><html><head>
+<title>Séminaire virtuel: vendredi 12 mars 2021</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="Séminaire virtuel: vendredi 12 mars 2021">
+<meta property="og:description" content="Samuel Chaffron (Combi team, LS2N, Nantes) et Stéphanie Chevalier (LRI, Paris-Saclay)">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.bioss-cnrs.fr/beta/seminaires/2021-03/"><meta property="article:section" content="seminaires">
+<meta property="article:published_time" content="2021-03-12T13:00:00+00:00">
+<meta property="article:modified_time" content="2021-03-12T13:00:00+00:00"><meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/beta/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/journal.min.e98aba1605f3a725fad0875a5584b620ed0fd58ea79d459f02fb560d7738fab4.css integrity="sha256-6Yq6FgXzpyX60IdaVYS2IO0P1Y6nnUWfAvtWDXc4+rQ=" media=screen>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/dark-mode.min.92e13ee85b2c4587b9a2c423bde35865b35fa7449a8e1babb34f5c66907a72e1.css integrity="sha256-kuE+6FssRYe5osQjveNYZbNfp0Sajhurs09cZpB6cuE=" media=screen>
+<script src=/beta/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script src=/beta/js/toc.js></script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
+</head>
+<body>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=https://www.bioss-cnrs.fr/beta/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block nav-link-item active" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block nav-link-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+<p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item active" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=https://www.bioss-cnrs.fr/beta/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=https://www.bioss-cnrs.fr/beta/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<div class=post>
+<div class=post-head-wrapper-text-only>
+<div class=post-title>
+Séminaire virtuel: vendredi 12 mars 2021
+<div class=post-subtitle>
+<a href=http://pagesperso.ls2n.fr/~chaffron-s>Samuel Chaffron</a> (Combi team, LS2N, Nantes) et <a href=https://www.lri.fr/~schevalier>Stéphanie Chevalier</a> (LRI, Paris-Saclay)
+</div>
+<div class=post-meta>
+</div>
+</div>
+</div>
+<div class=post-body-wrapper>
+<div class=post-body v-pre>
+<h3 id=13h00---13h30----samuel-chaffron-combi-team-ls2n-nantes>13h00 - 13h30 &ndash; Samuel Chaffron (Combi team, LS2N, Nantes)</h3>
+<p><strong>Environmental vulnerability of the global ocean plankton community
+interactome.</strong></p>
+<p><a href=chaffron_samuel.pdf>slides</a></p>
+<p>Marine plankton form complex communities of interacting organisms at the
+base of the food web, which sustain oceanic biogeochemical cycles, and
+help regulate climate. Though global surveys are starting to reveal
+ecological drivers underlying planktonic community structure, and
+predicted climate change responses, it is unclear how community-scale
+species interactions will be affected by climate change. Here we
+leveraged Tara Oceans sampling to infer a global ocean cross-domain
+plankton co-occurrence network &ndash; the community interactome &ndash; and used
+niche modeling to assess its vulnerabilities to environmental change.
+Globally, this revealed a plankton interactome self-organized
+latitudinally into marine biomes (Trades, Westerlies, Polar), and more
+connected poleward. Integrated niche modeling revealed biome-specific
+community interactome responses to environmental change, and forecasted
+most affected lineages for each community. These results provide
+baseline approaches to assess community structure and organismal
+interactions under climate scenarios, while identifying plausible
+plankton bioindicators for ocean monitoring of climate change.</p>
+<h3 id=13h30---14h00----stéphanie-chevalier-lifeware--inria-saclay>13h30 - 14h00 &ndash; Stéphanie Chevalier (Lifeware / Inria Saclay)</h3>
+<p><strong>Synthesis of Boolean networks from single-cell differentiation
+data.</strong></p>
+<p>Processes like cell differentiation and cancerisation have dynamical
+properties around the notion of trajectory (succession of changes in
+gene state), non-reachability (bifurcating event) and stability
+(differentiated cell). Single-cell data on such behaviors are now quite
+widely available but dynamical modelling with them remains too complex
+to be commonly leveraged. I will present the approach we develop to
+automatically infer dynamical models from such data and prior knowledge
+on gene interactions. The inference method consists in formulating the
+inference as a Boolean satisfiability problem, described as a logic
+program containing both the modelling formalism (Most Permissive Boolean
+network - MPBN) and the data on the biological process (prior knowledge,
+experimental measurements, dynamics, hypotheses). Several constraints
+have been implemented in Answer-Set Programming to ensure the desired
+dynamical properties, and thanks to this logic modeling it is now
+possible to exhaustively enumerate the MPBN compatible with the
+constraints of cell differentiation behaviors. In order to leverage
+single-cell data, I firstly run classification and trajectory
+reconstruction methods, then data are translated into logical form to
+describe the cells dynamics. I will present preliminary results obtained
+for a large-scale modeling of hematopoiesis from cell-scale
+transcriptomic sequencing data (single-cell RNA-seq data). Potential
+influences between genes and proteins are extracted from the SIGNOR
+database, which brings more than 5500 components (genes, proteins and
+complexes).</p>
+<hr width=100% id=EOF>
+<p style=color:#777>Dernière modification le 12/03/2021</p>
+</div>
+</div>
+<nav class=post-pagination>
+<a class=newer-posts href=https://www.bioss-cnrs.fr/beta/seminaires/2021-04/>
+Suivant<br>Séminaire virtuel: vendredi 2 avril 2021
+</a>
+<a class=older-posts href=https://www.bioss-cnrs.fr/beta/seminaires/2021-02/>
+Précédent<br>Séminaire virtuel: vendredi 5 février 2021
+</a>
+</nav>
+<div class=post-comment-wrapper>
+</div>
+</div>
+</div>
+</div>
+</div><div id=single-column-footer><p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/beta/js/journal.js></script>
+</body>
+</html>

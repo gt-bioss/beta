@@ -1,9 +1,454 @@
-<!DOCTYPE html>
-<html>
-<head>
-        <meta http-equiv="refresh" content="0; URL=https://www.bioss-cnrs.fr/old/membres.html">
+<!doctype html><html><head>
+<title>Membres</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="Membres">
+<meta property="og:description" content="Nous présentons ici les différents laboratoires et équipes de recherche affiliés au groupe Bioss, par ordre alphabétique sur les villes.
+Bordeaux  Inria, Équipe Pleiade
+Contact : David Sherman
+Domaine : Systèmes dynamiques - Réseaux métaboliques - Écologie des systèmes - Génomique comparée - Optimisation combinatoire - Géométrie computationelle - Gestion de connaissances
+Tutelles : Inria - INRAE - CNRS
+URL : https://team.inria.fr/pleiade LaBRI, Équipe Image et Son
+Contact : Marie Beurton-Aimar">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.bioss-cnrs.fr/beta/membres.html"><meta property="article:section" content>
+<meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/beta/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/journal.min.e98aba1605f3a725fad0875a5584b620ed0fd58ea79d459f02fb560d7738fab4.css integrity="sha256-6Yq6FgXzpyX60IdaVYS2IO0P1Y6nnUWfAvtWDXc4+rQ=" media=screen>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/dark-mode.min.92e13ee85b2c4587b9a2c423bde35865b35fa7449a8e1babb34f5c66907a72e1.css integrity="sha256-kuE+6FssRYe5osQjveNYZbNfp0Sajhurs09cZpB6cuE=" media=screen>
+<script src=/beta/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script src=/beta/js/toc.js></script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
 </head>
 <body>
-Redirecting to <a href="/old/membres.html">old website</a>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=https://www.bioss-cnrs.fr/beta/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block nav-link-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block nav-link-item active" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+<p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block drawer-menu-item active" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=https://www.bioss-cnrs.fr/beta/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=https://www.bioss-cnrs.fr/beta/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<div class=post>
+<div class=post-head-wrapper-text-only>
+<div class=post-title>
+Membres
+<div class=post-meta>
+</div>
+</div>
+</div>
+<div class=post-body-wrapper>
+<div class=post-body v-pre>
+<p>Nous présentons ici les différents laboratoires et équipes de recherche affiliés au groupe Bioss, par ordre alphabétique sur les villes.</p>
+<h4 id=bordeaux>Bordeaux</h4>
+<ul>
+<li>Inria, Équipe Pleiade<br>
+Contact : David Sherman<br>
+Domaine : Systèmes dynamiques - Réseaux métaboliques - Écologie des
+systèmes - Génomique comparée - Optimisation combinatoire -
+Géométrie computationelle - Gestion de connaissances<br>
+Tutelles : Inria - INRAE - CNRS<br>
+URL : <a href=https://team.inria.fr/pleiade>https://team.inria.fr/pleiade</a></li>
+<li>LaBRI, Équipe Image et Son<br>
+Contact : Marie Beurton-Aimar<br>
+Domaine : Analyse et visualisation de réseaux métaboliques,
+modélisation et simulation multi-agents, et apprentissage.<br>
+url : <a href="http://www.labri.fr/index.php?n=ImageSon.ImageSon">http://www.labri.fr/index.php?n=ImageSon.ImageSon</a></li>
+<li>LaBRI, Département Méthodes Formelles<br>
+Contact : Loïc Paulevé<br>
+Domaine : Réseaux booléens, synthèse de modèles formels,
+programmation logique, reprogrammation cellulaire<br>
+Tutelles: Univ Bordeaux, CNRS (INS2I), Bordeaux INP<br>
+url : <a href=https://www.labri.fr/methodes-et-modeles-formels>https://www.labri.fr/methodes-et-modeles-formels</a></li>
+</ul>
+<h4 id=évry>Évry</h4>
+<ul>
+<li>IBISC, Équipe COSMO<br>
+Contact : Franck Delaplace<br>
+Domaine : Modèles concurrents, réseaux de Petri, réseaux booléens,
+langages de modélisation et de programmation<br>
+Tutelles: Université Paris-Saclay<br>
+url : <a href=https://www.ibisc.univ-evry.fr/cosmo>https://www.ibisc.univ-evry.fr/cosmo</a></li>
+</ul>
+<h4 id=grenoble>Grenoble</h4>
+<ul>
+<li>INRIA, Équipe IBIS<br>
+Contact : Hidde de Jong<br>
+Domaine : Biologie systémique et synthétique bactérienne,
+intégration de données, systèmes dynamiques, théorie du contrôle,
+modèles stochastiques d'expression génique et de populations
+analyse et simulation numériques<br>
+Tutelles: Inria, Université Grenoble Alpes, CNRS<br>
+url : <a href=http://team.inria.fr/ibis>http://team.inria.fr/ibis</a></li>
+<li>TIMC-IMAG, Équipe BCM<br>
+Contact : Éric Fanchon<br>
+Domaine : Modèles discrets, programmation logique, systèmes
+dynamiques continus et hybrides<br>
+url : <a href=http://www-timc.imag.fr/rubrique44.html>http://www-timc.imag.fr/rubrique44.html</a></li>
+</ul>
+<h4 id=jouy-en-josas>Jouy en Josas</h4>
+<ul>
+<li>INRAE, Unité MaIAGE<br>
+Contact : Laurent Tournier<br>
+Domaine : Systèmes dynamiques, iBiologie des Systèmes<br>
+url : <a href=https://maiage.jouy.inra.fr>https://maiage.jouy.inra.fr</a></li>
+</ul>
+<h4 id=lille>Lille</h4>
+<ul>
+<li>CRIStAL, équipe BioComputing<br>
+Contact : Cédric Lhoussaine<br>
+Domaine : Analyse statique, Apprentissage, Réseaux métaboliques,
+Réseaux de réactions<br>
+Tutelles: CNRS (INS2I), Université de Lille, Centrale Lille, IMT
+Lille Douai<br>
+url : <a href=http://cristal.univ-lille.fr/BioComputing>http://cristal.univ-lille.fr/BioComputing</a></li>
+<li>CRIStAL, Équipe Calcul Formel et Haute Performance<br>
+Contact : François Boulier<br>
+Domaine : Calcul symbolique<br>
+Tutelles: CNRS (INS2I), Université de Lille, Centrale Lille, IMT
+Lille Douai<br>
+url : <a href=http://cristal.univ-lille.fr/CFHP>http://cristal.univ-lille.fr/CFHP</a>\</li>
+</ul>
+<h4 id=lyon>Lyon</h4>
+<ul>
+<li>LBMC, Équipe SBDM<br>
+Contact : Olivier Gandrillon<br>
+Domaine : Prise de décision à l'échelle cellulaire<br>
+url :
+<a href=http://www.ens-lyon.fr/LBMC/equipes/systems-biology-of-decision-making>http://www.ens-lyon.fr/LBMC/equipes/systems-biology-of-decision-making</a><br>
+Tutelles: CNRS, ENS Lyon, Université de Lyon 1, Inserm</li>
+<li>LBBE, Équipe ERABLE<br>
+Contact : Marie-France Sagot<br>
+Domaine : Intégration de données, réseaux métaboliques<br>
+url : <a href=https://team.inria.fr/erable/en/team-members>https://team.inria.fr/erable/en/team-members</a><br>
+Tutelles: Inria, CNRS, INSA Lyon</li>
+<li>LIRIS, Équipe BEAGLE<br>
+Contact : Guillaume Beslon<br>
+Domaine : Évolution artificielle, dynamique inter-cellulaire<br>
+url : <a href=https://team.inria.fr/beagle/>https://team.inria.fr/beagle/</a><br>
+Tutelles: Inria, INSA Lyon, Université Lyon 1</li>
+<li>LIP, Équipe PLUME<br>
+Contact : Russ Harmer<br>
+Domaine : Modélisation à base de règles<br>
+url : <a href=http://www.ens-lyon.fr/LIP/PLUME>http://www.ens-lyon.fr/LIP/PLUME</a><br>
+Tutelles: ENS Lyon, CNRS, Université Lyon 1</li>
+</ul>
+<h4 id=marseille>Marseille</h4>
+<ul>
+<li>I2M, Équipe GDAC<br>
+Contact : Pierre Guillon<br>
+Domaine : Systèmes dynamiques, pavages, automates cellulaires<br>
+url :
+<a href=https://www.i2m.univ-amu.fr/Equipe-Geometrie-Dynamique-Arithmetique>https://www.i2m.univ-amu.fr/Equipe-Geometrie-Dynamique-Arithmetique</a></li>
+<li>I2M, Équipe Mabios<br>
+Contact : Élisabeth Remy<br>
+Domaine : Modèles logiques, graphes biologiques, systèmes dynamiques
+discrets<br>
+url : <a href=http://mabios.math.cnrs.fr>http://mabios.math.cnrs.fr</a><br>
+Tutelles: AMU, CNRS, École Centrale Marseille</li>
+<li>LIS (UMR7020), Équipe CANA<br>
+Contact : Sylvain Sené<br>
+Domaine : Calcul naturel, systèmes dynamiques, réseaux
+d'interactions, automates cellulaires<br>
+Tutelles: AMU, CNRS (INS2I)<br>
+url : <a href=https://cana.lis-lab.fr>https://cana.lis-lab.fr</a></li>
+<li>MMG, Equipe NSBD<br>
+Contact : Anaïs Baudot<br>
+Domaine : Intégration de données, réseaux d&rsquo;interactions biologiques
+multi-couches, analyse de données omiques<br>
+Tutelles: AMU, INSERM<br>
+url : <a href=https://www.marseille-medical-genetics.org/a-baudot>https://www.marseille-medical-genetics.org/a-baudot</a></li>
+<li>MIO, Équipe EMBIO<br>
+Contact : David Nerini<br>
+Domaine : Systèmes dynamiques, systèmes lents-rapides, dynamique
+adaptative, analyse de données fonctionnelles<br>
+url : <a href=http://www.mio.univ-amu.fr/?-Equipe-5-Ecologie-Marine-et->http://www.mio.univ-amu.fr/?-Equipe-5-Ecologie-Marine-et-</a></li>
+</ul>
+<h4 id=montpellier>Montpellier</h4>
+<ul>
+<li>DIMNP, Équipe Biophysique théorique et biologie des systèmes<br>
+Contact : Ovidiu Radulescu<br>
+Domaine : Réduction de modèles<br>
+Tutelles:<br>
+url :
+<a href="http://www.dimnp.univ-montp2.fr/joomla/index.php?option=com_content&view=article&id=23&Itemid=131&lang=fr">https://lphi.umontpellier.fr/fr/les-equipes/biophysique-theorique-et-biologie-des-systemes</a></li>
+</ul>
+<h4 id=nancy>Nancy</h4>
+<ul>
+<li>LORIA, Équipe CARTE<br>
+Contact : Emmanuel Jeandel<br>
+Domaine : Systèmes dynamiques, complexité, calculabilité<br>
+url : <a href=http://carte.loria.fr/>http://carte.loria.fr/</a></li>
+</ul>
+<h4 id=nantes>Nantes</h4>
+<ul>
+<li>IRCCyN, Équipe MÉFORBIO<br>
+Contact : Olivier Roux<br>
+Domaine : Modèles concurrents, réseaux d'interactions,
+formalisation des conniassances, programmation logique<br>
+Tutelles: CNRS, Université de Nantes, Centrale Nantes, IMT
+Atlantique<br>
+url : <a href=https://www.ls2n.fr/equipe/meforbio/>https://www.ls2n.fr/equipe/meforbio/</a></li>
+<li>LINA, Équipe COMBI<br>
+Contact : Damien Eveillard<br>
+Domaine : modèles écologiques, modèles métaboliques, analyse et
+modélisation statique, combinatoire.<br>
+Tutelles: CNRS, Université de Nantes, Centrale Nantes, IMT
+Atlantique (partenaire INRIA)<br>
+url :
+<a href=https://www.ls2n.fr/equipe/combi/>https://www.ls2n.fr/equipe/combi</a></li>
+</ul>
+<h4 id=nice>Nice</h4>
+<ul>
+<li>I3S, Équipe SPARKS<br>
+Contact : Jean-Paul Comet<br>
+Domaine : Réseaux discrets, méthodes formelles, vérification,
+systèmes dynamiques<br>
+Tutelles: Université Côte d'Azur, CNRS (INS2I)<br>
+url : <a href=http://www.i3s.unice.fr/sparks>http://www.i3s.unice.fr/sparks</a></li>
+<li>I3S, Équipe MDSC<br>
+Contact : Enrico Formenti<br>
+Domaine : Réseaux booléens, méthodes formelles, systèmes dynamiques,
+automates cellulaires<br>
+Tutelles: Université Côte d'Azur, CNRS (INS2I)<br>
+url : <a href=http://www.i3s.unice.fr/mdsc>http://www.i3s.unice.fr/mdsc</a></li>
+<li>INRIA, Équipe BIOCORE<br>
+Contact : Madalena Chaves<br>
+Domaine : Modèles booléens, contrôle, réduction<br>
+Tutelles: Inria<br>
+url : <a href=https://team.inria.fr/biocore>https://team.inria.fr/biocore</a></li>
+</ul>
+<h4 id=orsay>Orsay</h4>
+<ul>
+<li>LRI, Équipe BIOINFO<br>
+Contact : Christine Froidevaux<br>
+Domaine : Modèles concurrents, représentation des connaissances,
+analyse et simulation numériques de réseaux<br>
+Tutelles:<br>
+url : <a href="https://www.lri.fr/equipe.php?eq=4">https://www.lri.fr/equipe.php?eq=4</a></li>
+</ul>
+<h4 id=paris>Paris</h4>
+<ul>
+<li>DIENS, Équipe ANTIQUE<br>
+Contact : Jérôme Féret<br>
+Domaine : Interprétation abstraite, analyse statique, modélisation à
+base de règles<br>
+url : <a href=http://www.di.ens.fr/AntiqueTeam.html.fr>http://www.di.ens.fr/AntiqueTeam.html.fr</a></li>
+<li>IBENS, Équipe CSB<br>
+Contact : Denis Thieffry<br>
+Domaine : Modèles Booléens et multivalués, analyses de données
+omiques<br>
+Tutelles: ENS, CNRS (INSB), INSERM<br>
+url : <a href=https://www.ibens.ens.fr/csb>https://www.ibens.ens.fr/csb</a></li>
+<li>INRIA, Équipe TAPDANCE<br>
+Contact: Damien Woods<br>
+Domaine : Calcul naturel, auto-assemblage, automates cellulaires<br>
+url : <a href=https://www.inria.fr/equipes/tapdance>https://www.inria.fr/equipes/tapdance</a></li>
+<li></li>
+<li>Institut Curie, Équipe U900, Computational Systems Biology of
+Cancer<br>
+Contact : Laurence Calzone<br>
+Domaine : Modèles booléens, modèles stochastique, simulations
+numériques<br>
+url : <a href=https://sysbio.curie.fr>http://sysbio.curie.fr</a></li>
+<li>INSERM U1138, Équipe KROEMER<br>
+Contact : Gautier Stoll<br>
+Domaine : simulations logiques stochastiques<br>
+url : <a href=http://www.crc.jussieu.fr/guido_kroemer2.html>http://www.crc.jussieu.fr/guido_kroemer2.html</a></li>
+<li>IRCAM, Équipe MRT<br>
+Contact : Jean-Louis Giavitto<br>
+Domaine : Programmation spatiale, calcul amorphe, simulations
+numériques, biologie synthétique<br>
+url : <a href=http://repmus.ircam.fr/giavitto>http://repmus.ircam.fr/giavitto</a></li>
+<li>IRIF, Équipe ADG<br>
+Contact : Nicolas Schabanel<br>
+Domaine : Systèmes dynamiques, théorie des graphes, automates
+cellulaires, complexité<br>
+url : <a href=https://www.irif.univ-paris-diderot.fr/equipes/adg/index>https://www.irif.univ-paris-diderot.fr/equipes/adg/index</a></li>
+<li>IRIF, Équipe PPS<br>
+Contact : Jean Krivine<br>
+Domaine : Modélisation à base de règles, modèles discrets<br>
+url : <a href=http://www.irif.univ-paris-diderot.fr/>http://www.irif.univ-paris-diderot.fr/</a>~jkrivine</li>
+<li>LACL, Équipe LCP<br>
+Contact : Olivier Michel<br>
+Domaine : Programmation spatiale, calcul amorphe, simulations
+numériques<br>
+url : <a href=http://www.lacl.fr/fr/lcp>http://www.lacl.fr/fr/lcp</a></li>
+<li>MAS, Équipe LOGIMAS<br>
+Contact : Pascale Le Gall<br>
+Domaine : Méthodes formelles, analyse, test, vérification<br>
+url :
+<a href=http://www.mas.ecp.fr/cms/lang/fr/home/recherche_mas/equipes/logimas>http://www.mas.ecp.fr/cms/lang/fr/home/recherche_mas/equipes/logimas</a></li>
+<li>Inria / Institut Pasteur, Equipe InBio<br>
+Contact : Gregory Batt<br>
+Domaine : Biologie computationnelle, Biologie des systèmes, Biologie
+de synthèse, Modèles déterministes et stochastiques, Hétérogénéité
+cellulaire et dynamique de populations<br>
+url : <a href=https://research.pasteur.fr/en/team/inbio/>https://research.pasteur.fr/en/team/inbio/</a><br>
+Tutelles: Inria</li>
+</ul>
+<h4 id=rennes>Rennes</h4>
+<ul>
+<li>IRISA, Équipe Dyliss<br>
+Contact : Anne Siegel<br>
+Domaine : Réseaux métaboliques, Microbiome, Intégration
+multi-échelle, modèles booléens, Web sémantique<br>
+url : <a href=https://www-dyliss.irisa.fr>https://www-dyliss.irisa.fr</a><br>
+Tutelles: Université de Rennes 1, Inria, CNRS (INS2I)</li>
+</ul>
+<h4 id=saclay>Saclay</h4>
+<ul>
+<li>INRIA, Équipe Lifeware<br>
+Contact : François Fages<br>
+Domaine : Vérification et synthèse de paramètres, programmation par
+contraintes, réduction, liens structure/dynamique<br>
+url : <a href=http://lifeware.inria.fr>http://lifeware.inria.fr</a></li>
+<li>LIX, Équipe AMIB<br>
+Contact : Mireille Régnier<br>
+Domaine : Modélisation métabolique<br>
+url : <a href=https://team.inria.fr/amib/fr>https://team.inria.fr/amib/fr</a></li>
+</ul>
+<h4 id=tours>Tours</h4>
+<ul>
+<li>PRC INRAE, équipe BIOS<br>
+Contact: Romain Yvinec<br>
+Domaine: réseaux signalisation cellulaire des récepteurs couplés aux
+protéines G, modélisation dynamique déterministe et stochastique
+(ODE,CTMC), inférence de paramètres<br>
+Tutelles: INRAAE, CNRS, Université de Tours<br>
+url: <a href=http://bios.tours.inra.fr/bios_group>http://bios.tours.inra.fr/bios_group</a></li>
+</ul>
+</div>
+</div>
+<nav class=post-pagination>
+<a class=newer-posts href=https://www.bioss-cnrs.fr/beta/projets.html>
+Suivant<br>Contrats et projets en lien avec le groupe
+</a>
+<a class=older-posts href=https://www.bioss-cnrs.fr/beta/contact.html>
+Précédent<br>Nous contacter
+</a>
+</nav>
+<div class=post-comment-wrapper>
+</div>
+</div>
+</div>
+</div>
+</div><div id=single-column-footer><p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/beta/js/journal.js></script>
 </body>
 </html>

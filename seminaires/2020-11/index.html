@@ -1,0 +1,217 @@
+<!doctype html><html><head>
+<title>Séminaire virtuel: vendredi 6 novembre 2020</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="Séminaire virtuel: vendredi 6 novembre 2020">
+<meta property="og:description" content="Déborah Boyenval (I3S/Sparks) et Loïc Paulevé(CNRS/LaBRI/Formal Methods)">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.bioss-cnrs.fr/beta/seminaires/2020-11/"><meta property="article:section" content="seminaires">
+<meta property="article:published_time" content="2020-11-06T13:00:00+00:00">
+<meta property="article:modified_time" content="2020-11-06T13:00:00+00:00"><meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/beta/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/journal.min.e98aba1605f3a725fad0875a5584b620ed0fd58ea79d459f02fb560d7738fab4.css integrity="sha256-6Yq6FgXzpyX60IdaVYS2IO0P1Y6nnUWfAvtWDXc4+rQ=" media=screen>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/dark-mode.min.92e13ee85b2c4587b9a2c423bde35865b35fa7449a8e1babb34f5c66907a72e1.css integrity="sha256-kuE+6FssRYe5osQjveNYZbNfp0Sajhurs09cZpB6cuE=" media=screen>
+<script src=/beta/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script src=/beta/js/toc.js></script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
+</head>
+<body>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=https://www.bioss-cnrs.fr/beta/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block nav-link-item active" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block nav-link-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+<p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item active" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=https://www.bioss-cnrs.fr/beta/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=https://www.bioss-cnrs.fr/beta/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<div class=post>
+<div class=post-head-wrapper-text-only>
+<div class=post-title>
+Séminaire virtuel: vendredi 6 novembre 2020
+<div class=post-subtitle>
+<a href=http://www.i3s.unice.fr/~boyenval>Déborah Boyenval</a> (I3S/Sparks) et <a href=https://loicpauleve.name>Loïc Paulevé</a>(CNRS/LaBRI/Formal Methods)
+</div>
+<div class=post-meta>
+</div>
+</div>
+</div>
+<div class=post-body-wrapper>
+<div class=post-body v-pre>
+<h3 id=13h00---13h30----déborah-boyenval-i3ssparks>13h00 - 13h30 &ndash; Déborah Boyenval (I3S/Sparks)</h3>
+<p><strong>Étude des checkpoints du cycle cellulaire : spécification et vérification</strong></p>
+<p><a href=Boyenval_gtbioss_6nov20.pdf>slides</a></p>
+<p>Le cycle cellulaire est par définition une succession
+d'évènements conduisant à la duplication sans erreur de l'ADN (phase
+S) et l'équitable division d'une cellule mère en deux cellules filles
+(phase M). Au cours de la progression du cycle cellulaire (G1-S-G2-M),
+l'intégrité de l'ADN est garantie notamment par les checkpoints. Nos
+travaux montrent que la modélisation discrète du cycle cellulaire permet
+de modéliser proprement la notion fondamentale de checkpoint. Un nouveau
+modèle multivalué du cycle cellulaire est présenté en suivant le
+formalisme de René Thomas. Le modèle se focalise sur la succession des
+évènements de régulation qui représente le cycle cellulaire. On y montre
+que plusieurs permutations de ces évènements sont admissibles, tout en
+permettant néanmoins de dégager des évènements clefs non permutables qui
+caractérisent les checkpoints. Cette étude a été rendue possible grâce à
+l'usage de deux types de méthodes formelles dédiées aux réseaux de
+régulation multivalués: la logique de Hoare "génétiquement modifiée"
+et le model-checking pour CTL. L'outil TotemBioNet combine efficacement
+ces deux approches formelles pour identifier exhaustivement les
+paramètres dynamiques des modèles compatibles avec nos définitions du
+cycle cellulaire et de ses checkpoints.</p>
+<h3 id=13h30---14h00----loïc-paulevé-cnrslabriformal-methods>13h30 - 14h00 &ndash; Loïc Paulevé (CNRS/LaBRI/Formal Methods)</h3>
+<p><strong>Most Permissive Boolean Networks in practice</strong></p>
+<p><a href=2020-11-06-Pauleve.pdf>slides</a></p>
+<p>Logical modeling, notably with Boolean Networks (BNs), is a
+well-established approach that enables reasoning on the qualitative
+dynamics of networks. However, (a)synchronous Boolean network, besides
+being costly to analyze, can preclude the prediction of certain
+behaviors observed in quantitative systems.<br>
+Most Permissive Boolean Networks offer the formal guarantee not to miss
+any behavior achievable by a quantitative model following the same
+logic. Moreover, MPBNs significantly reduce the complexity of dynamical
+analysis, enabling to model genome-scale networks.<br>
+In this talk, after an overview of the motivation and properties of
+MPBNs, I'll focus on their practical usage for the analysis of models
+of biological networks.</p>
+<p>Related material:</p>
+<ul>
+<li><a href=https://www.nature.com/articles/s41467-020-18112-5>https://www.nature.com/articles/s41467-020-18112-5</a></li>
+<li><a href=https://zenodo.org/record/3936123>https://zenodo.org/record/3936123</a></li>
+</ul>
+<hr width=100% id=EOF>
+<p style=color:#777>Dernière modification le 06/11/2020</p>
+</div>
+</div>
+<nav class=post-pagination>
+<a class=newer-posts href=https://www.bioss-cnrs.fr/beta/manif/biossia_202011/biossia202011.html>
+Suivant<br>Journées Bioss-IA (4e édition)
+</a>
+<a class=older-posts href=https://www.bioss-cnrs.fr/beta/seminaires/2020-10/>
+Précédent<br>Séminaire virtuel: vendredi 2 octobre 2020
+</a>
+</nav>
+<div class=post-comment-wrapper>
+</div>
+</div>
+</div>
+</div>
+</div><div id=single-column-footer><p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/beta/js/journal.js></script>
+</body>
+</html>

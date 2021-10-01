@@ -1,9 +1,283 @@
-<!DOCTYPE html>
-<html>
-<head>
-        <meta http-equiv="refresh" content="0; URL=https://www.bioss-cnrs.fr/old/manif/lille_201611/lille201611.html">
+<!doctype html><html><head>
+<title>Workshop "Metabolism in Systems Biology"</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="Workshop &#34;Metabolism in Systems Biology&#34;">
+<meta property="og:description" content="Les 24 et 25 novembre 2016 à Lille">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.bioss-cnrs.fr/beta/manif/lille_201611/lille201611.html"><meta property="article:section" content="events">
+<meta property="article:published_time" content="2016-11-24T00:00:00+00:00">
+<meta property="article:modified_time" content="2016-11-24T00:00:00+00:00"><meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/beta/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/journal.min.e98aba1605f3a725fad0875a5584b620ed0fd58ea79d459f02fb560d7738fab4.css integrity="sha256-6Yq6FgXzpyX60IdaVYS2IO0P1Y6nnUWfAvtWDXc4+rQ=" media=screen>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/dark-mode.min.92e13ee85b2c4587b9a2c423bde35865b35fa7449a8e1babb34f5c66907a72e1.css integrity="sha256-kuE+6FssRYe5osQjveNYZbNfp0Sajhurs09cZpB6cuE=" media=screen>
+<script src=/beta/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script src=/beta/js/toc.js></script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
 </head>
 <body>
-Redirecting to <a href="/old/manif/lille_201611/lille201611.html">old website</a>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=https://www.bioss-cnrs.fr/beta/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block nav-link-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block nav-link-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+<p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=https://www.bioss-cnrs.fr/beta/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=https://www.bioss-cnrs.fr/beta/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<div class=post>
+<div class=post-head-wrapper-text-only>
+<div class=post-title>
+Workshop "Metabolism in Systems Biology"
+<div class=post-subtitle>
+Les <strong>24 et 25 novembre 2016</strong> à Lille
+</div>
+<div class=post-meta>
+</div>
+</div>
+</div>
+<div class=post-body-wrapper>
+<div class=post-body v-pre>
+<p>Dates : 2016 Nov. 24th, 10:00 -- Nov. 25th 16:00</p>
+<p>Place : <a href=http://www.univ-lille1.fr>Lille University</a>, Cité
+scientifique, Villeneuve d'Ascq.</p>
+<p>Organization :<br>
+<a href=http://www.cristal.univ-lille.fr/BioComputing>BioComputing group</a> of
+the computer science lab <a href=http://cristal.univ-lille.fr>CRIStAL</a> of the
+university of Lille<br>
+(<a href=http://cristal.univ-lille.fr/~lhoussai>Cedric Lhoussaine</a>, <a href=http://researchers.lille.inria.fr/~niehren>Joachim
+Niehren</a> and <a href=http://www.cristal.univ-lille.fr/~versaric>Cristian
+Versari</a>)</p>
+<h3 id=topic-of-the-workshop>Topic of the workshop:</h3>
+<p>Given that metabolism is a central aspect of all living systems, the
+domain of metabolomics has become a large research domain in molecular
+biology. In the last 10 years, this has raised increasing interest in
+the formal modeling and analysis of metabolic networks. A typical
+example is flux balance analysis, but also the control of the metabolic
+fluxes has become subject to formal modeling and prediction approaches.
+The objective of the workshop is therefore to bring together researchers
+from computer science, biology, chemistry, and mathematics, who are
+working on different aspects of the modeling of metabolic networks.</p>
+<h4 id=a-model-of-the-bcaa-metabolic-network-of-bsubtilis>A model of the BCAA metabolic network of B.~Subtilis</h4>
+<p><img src=leucine.png alt="Leucine network."></p>
+<p>Bioss will support the workshop fees and the hotel costs. Only the
+travel costs are left to the participants. If you are interested to join
+the workshop, please contact the organizers by Email to
+<a href=mailto:bio-computing-metabolism@lists.gforge.inria.fr>bio-computing-metabolism@lists.gforge.inria.fr</a></p>
+<h3 id=program>Program</h3>
+<p><em>The precise schedule is yet to be announced but we will be starting at
+10:00 on Nov. 24th and finish at 16:00 on Nov. 25th.</em></p>
+<ul>
+<li><a href=http://teusinklab.nl/frank-bruggeman>Frank Brueggeman</a> TBA</li>
+<li><a href=http://www-sop.inria.fr/members/Olivier.Bernard/OBernard-fra.html>Olivier
+Bernard</a>
+Dynamic metabolic modelling of microalgae. Also presents work of
+<a href=https://www.researchgate.net/profile/Caroline_Baroukh>Caroline
+Baroukh</a>.</li>
+<li><a href=https://www.researchgate.net/profile/Francois_Coutte>François
+Coutte</a>
+Surfactine overproduction and how the models for metabolism of
+B.Subtilis. Joint work with <a href=http://www.cristal.univ-lille.fr/~versaric>Cristian
+Versari</a>, <a href=http://researchers.lille.inria.fr/~niehren>Joachim
+Niehren</a>, Philippe
+Jacques, and Debarun Dali.</li>
+<li><a href="https://lbbe.univ-lyon1.fr/-Kahn-Daniel-.html?lang=fr">Daniel Kahn</a>
+Discussing metabolic interpretation of metagenomic data.</li>
+<li><a href=http://researchers.lille.inria.fr/~niehren>Joachim Niehren</a>
+Structural simplification of reaction networks in partial steady
+states. Joint work with <a href>Guillaume Madelaine</a>, <a href=http://www.cristal.univ-lille.fr/~lhoussai>Cédric
+Lhoussaine</a>, and Elisa
+Tonello.</li>
+<li><a href=http://jean-pierre.mazat.pagesperso-orange.fr>Jean-Pierre Mazat</a>
+Small is beautiful. Human scale metabolic model(s).</li>
+<li><a href=https://www.linkedin.com/in/nathalie-poupin-81045455>Nathalie
+Poupin</a>
+Exploring metabolic modulations using genome scale network modelling
+and omics data.</li>
+<li><a href=https://www.lri.fr/~speres>Sabine Peres</a> and <a href=https://www.lri.fr/~dague>Philippe
+Dague</a> SAT-based approaches for metabolic
+pathway analysis.</li>
+<li><a href=http://www.irisa.fr/dyliss/anne.siegel>Anne Siegel</a> Reconstruction
+d'un réseau métabolique à partir de données brutes.</li>
+<li><a href=https://www.researchgate.net/profile/Moritz_Von_Stosch>Moritz von
+Stosch</a> An
+elementary mode constrained latent variable method for reaction flux
+data analysis.</li>
+<li><a href=http://www.i3s.unice.fr/~khoodeer/>Rajeev Khoodeeram</a> A formal
+model of metabolism to decipher Crabtree effect. Joint work with
+<a href=http://www.supbiotech.fr/professeurs-biotechnologie.aspx>Jean-Yves
+Trosset</a>
+and Gilles Bernot.</li>
+<li><a href>Emilie Allart</a> Change prediction of reaction networks with
+partial kinetic information and the elementary modes. Joint work
+with <a href=http://www.cristal.univ-lille.fr/~versaric>Cristian Versari</a>
+and <a href=http://researchers.lille.inria.fr/~niehren>Joachim Niehren</a>.</li>
+</ul>
+<h3 id=participants>Participants</h3>
+<p><a href=http://teusinklab.nl/frank-bruggeman>Frank Brueggeman</a> Vrije
+Universitat Amsterdam<br>
+<a href=https://www.researchgate.net/profile/Caroline_Baroukh>Caroline
+Baroukh</a>
+Université de Toulouse<br>
+<a href=http://www-sop.inria.fr/members/Olivier.Bernard/OBernard-fra.html>Olivier
+Bernard</a>
+Inria Sophia-Antipolis<br>
+<a href=https://www.lri.fr/~dague>Philippe Dague</a> Université Paris Sud<br>
+<a href="https://lbbe.univ-lyon1.fr/-Kahn-Daniel-.html?lang=fr">Daniel Kahn</a>
+INRA Lyon<br>
+<a href=http://www.i3s.unice.fr/~khoodeer/>Rajeev KHOODEERAM</a> I3S, UNICE<br>
+<a href=http://www.cristal.univ-lille.fr/~lhoussai>Cédric Lhoussaine</a>
+Université de Lille<br>
+<a href=http://jean-pierre.mazat.pagesperso-orange.fr>Jean-Pierre Mazat</a>
+Université Bordeaux<br>
+<a href=http://researchers.lille.inria.fr/~niehren>Joachim Niehren</a> Inria
+Lille<br>
+<a href=https://www.linkedin.com/in/nathalie-poupin-81045455>Nathalie Poupin</a>
+INRA Toulouse<br>
+<a href=https://www.lri.fr/~speres>Sabine Peres</a> Université Paris Sud<br>
+<a href=http://iml.univ-mrs.fr/~remy/remy.html>Elisabeth Remy</a> Université de
+Marseille<br>
+<a href=http://www.irisa.fr/dyliss/anne.siegel>Anne Siegel</a> Inria Rennes<br>
+<a href=https://www.researchgate.net/profile/Moritz_Von_Stosch>Moritz von
+Stosch</a>
+Newcastle University<br>
+<a href=http://www.supbiotech.fr/professeurs-biotechnologie.aspx>Jean-Yves
+Trosset</a>
+Sup&rsquo;Biotech, Paris Sud<br>
+<a href=http://www.cristal.univ-lille.fr/~versaric>Cristian Versari</a>
+Université de Lille\</p>
+<hr width=100% id=EOF>
+<p style=color:#777>Dernière modification le 24/11/2016</p>
+</div>
+</div>
+<nav class=post-pagination>
+<a class=newer-posts href=https://www.bioss-cnrs.fr/beta/manif/jnbioss_201703/jnbioss201703.html>
+Suivant<br>Journées annuelles du GT Bioss (2017, 3e édition)
+</a>
+<a class=older-posts href=https://www.bioss-cnrs.fr/beta/manif/jnbioss_201607/jnbioss201607.html>
+Précédent<br>Journées annuelles du GT Bioss (2016, 2e édition)
+</a>
+</nav>
+<div class=post-comment-wrapper>
+</div>
+</div>
+</div>
+</div>
+</div><div id=single-column-footer><p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/beta/js/journal.js></script>
 </body>
 </html>

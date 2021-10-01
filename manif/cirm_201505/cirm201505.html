@@ -1,9 +1,517 @@
-<!DOCTYPE html>
-<html>
-<head>
-        <meta http-equiv="refresh" content="0; URL=https://www.bioss-cnrs.fr/old/manif/cirm_201505/cirm201505.html">
+<!doctype html><html><head>
+<title>Journées thématiques "Méthodes de réduction de modèles"</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="Journées thématiques &#34;Méthodes de réduction de modèles&#34;">
+<meta property="og:description" content="Les 28  et 29 mai 2015 au CIRM, Marseille">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.bioss-cnrs.fr/beta/manif/cirm_201505/cirm201505.html"><meta property="article:section" content="events">
+<meta property="article:published_time" content="2015-05-28T00:00:00+00:00">
+<meta property="article:modified_time" content="2015-05-28T00:00:00+00:00"><meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/beta/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/journal.min.e98aba1605f3a725fad0875a5584b620ed0fd58ea79d459f02fb560d7738fab4.css integrity="sha256-6Yq6FgXzpyX60IdaVYS2IO0P1Y6nnUWfAvtWDXc4+rQ=" media=screen>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/dark-mode.min.92e13ee85b2c4587b9a2c423bde35865b35fa7449a8e1babb34f5c66907a72e1.css integrity="sha256-kuE+6FssRYe5osQjveNYZbNfp0Sajhurs09cZpB6cuE=" media=screen>
+<script src=/beta/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script src=/beta/js/toc.js></script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
 </head>
 <body>
-Redirecting to <a href="/old/manif/cirm_201505/cirm201505.html">old website</a>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=https://www.bioss-cnrs.fr/beta/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block nav-link-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block nav-link-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+<p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=https://www.bioss-cnrs.fr/beta/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=https://www.bioss-cnrs.fr/beta/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<div class=post>
+<div class=post-head-wrapper-text-only>
+<div class=post-title>
+Journées thématiques "Méthodes de réduction de modèles"
+<div class=post-subtitle>
+Les <strong>28 et 29 mai 2015</strong> au CIRM, Marseille
+</div>
+<div class=post-meta>
+</div>
+</div>
+</div>
+<div class=post-body-wrapper>
+<div class=post-body v-pre>
+<h3 id=thème-de-la-réunion>Thème de la réunion</h3>
+<p>La modélisation et l&rsquo;étude des réseaux biomoléculaires est un domaine en
+pleine expansion, et les modèles considérés sont de taille et complexité
+croissantes. C&rsquo;est pourquoi de plus en plus d&rsquo;attention et d&rsquo;efforts
+sont portés sur les techniques et méthodes de réduction de modèles. Le
+choix de la méthode de réduction va bien évidemment dépendre du
+formalisme de modélisation utilisé, du système biologique étudié, des
+données biologiques accessibles, etc... Un des critères fondamentaux
+dans le choix de la méthode de réduction est l&rsquo;ensemble des propriétés
+dynamiques qui sont conservées : en particulier, les attracteurs, la
+fonctionnalité des circuits, les échelles de temps, et les comportements
+transitoires peuvent être impactés lors de la réduction du système, ce
+qui peut nuire à l&rsquo;interprétation biologique des propriétés du systèmes.
+Cet atelier a pour but de faire le point sur les différentes approches
+utilisées dans le cadre de la réduction de modèles biologiques discrets.
+Ainsi, les participants pressentis ont des expériences d&rsquo;étude et
+d&rsquo;utilisation de méthodes de réductions dans divers types de réseaux
+biologiques (réseaux de régulation, réseaux métaboliques...), ayant
+recours à différents formalismes de modélisation (réseaux d&rsquo;automates,
+réseaux booléens, modélisation à base de règles, réseaux
+d&rsquo;interactions...). L&rsquo;objectif sera de mieux comprendre les différentes
+approches existantes, les invariants conservés par ces approches, ainsi
+que les applications transversales possibles à différents formalismes.</p>
+<h3 id=programme>Programme</h3>
+<h4 id=jeudi-28-mai-2015>Jeudi 28 mai 2015</h4>
+<p><strong>10h15 - 10h30</strong> - <a href=siegel.pdf>slides</a><br>
+    Anne Siegel - <em>Présentation du GT Bioss</em><br>
+<strong>10h30 - 11h15</strong> - <a href=feret.pdf>slides</a><br>
+    Jérôme Feret - <em>Réduction de modèles de voies de signalisation
+intracellulaires</em><br>
+<strong>11h15 - 12h00</strong> - <a href=radulescu.pdf>slides</a><br>
+    Ovidiu Radulescu - <em>Taming the complexity of biochemical networks
+through model reduction and tropical geometry</em><br>
+<strong>14h00 - 14h45</strong> - <a href=richard.pdf>slides</a><br>
+    Adrien Richard - <em>Reduction of finite dynamical systems and linear
+network coding solvability</em><br>
+<strong>14h45 - 15h30</strong> - <a href=eveillard.pdf>slides</a><br>
+    Damien Éveillard - <em>Rechercher des modules dans les réseaux
+métaboliques</em><br>
+<strong>16h00 - 16h45</strong> - <a href=madelaine.pdf>slides</a><br>
+    Guillaume Madelaine - <em>Structural simplification of chemical
+reaction networks preserving deterministic semantics</em><br>
+<strong>16h45 - 17h30</strong> - <a href=basso.pdf>slides</a><br>
+    Adrien Basso-Blandin - <em>Modèle de représentation de connaissances
+annoté pour la biologie</em><br>
+<strong>17h30 - 18h15</strong> - <a href=pauleve.pdf>slides</a><br>
+    Loïc Paulevé - <em>Goal-oriented reduction of automata networks</em>\</p>
+<h4 id=vendredi-29-mai-2015>Vendredi 29 mai 2015</h4>
+<p><strong>09h00 - 09h45</strong> - <a href=fages.pdf>slides</a><br>
+    François Fages - <em>Réductions de modèles par épimorphismes de
+sous-graphes</em><br>
+<strong>09h45 - 10h30</strong> - <a href=delaplace.pdf>slides</a><br>
+    Franck Delaplace - <em>Analogous dynamics of Boolean networks</em><br>
+<strong>11h00 - 11h45</strong> - <a href=naldi.pdf>slides</a><br>
+    Aurélien Naldi - <em>Une méthode de réduction pour la manipulation de
+grands modèles logiques</em><br>
+<strong>11h45 - 12h30</strong> - <a href=abou_jaoude.pdf>slides</a><br>
+    Wassim Abou-Jaoudé - <em>Derivation of dynamical qualitative models
+from biochemical networks</em><br>
+<strong>14h00 - 14h45</strong> - <a href=melliti.pdf>slides</a><br>
+    Tarek Melliti - <em>Analysis of modular organisation of interaction
+networks based on asymptotic dynamics</em><br>
+<strong>14h45 - 15h30</strong> - <a href=tournier.pdf>slides</a><br>
+    Laurent Tournier - <em>Uncovering regulations in B. subtilis metabolic
+network, combining optimal resource allocation and Boolean inference</em>\</p>
+<h3 id=résumés>Résumés</h3>
+<p><strong>Wassim Abou-Jaoudé</strong> - <em>Derivation of dynamical qualitative models
+from biochemical networks</em><br>
+As technological advances allow a better identification of cellular
+networks, more and more molecular data are produced allowing the
+construction of detailed molecular interaction maps. One strategy to get
+insights into the dynamical properties of such systems is to derive
+compact dynamical models from these maps, which would then be handled
+more efficiently for the analysis of their dynamics. Starting from two
+specific case studies of networks, I will present a methodology for the
+derivation of qualitative dynamical models from biochemical networks.
+Properties are formalised using abstraction interpretation techniques.
+We first abstract states and traces by quotienting the state space by
+intervals. The induced abstract semantics is too coarse to reproduce the
+properties of interest for our two examples. We then refine the abstract
+semantics by introducing additional constraints and information on the
+kinetics computed by abstract interpretation. The resulting semantics is
+able to reproduce our properties of interest.<br>
+<br>
+<strong>Adrien Basso-Blandin</strong> - <em>Modèle de représentation de connaissances
+annoté pour la biologie</em><br>
+L'étude des voies de signalisations biologiques des cancers est un
+travail extrêmement complexe. En effet, de tels systèmes possèdent de
+nombreux paramètres, agents et processus, mais ils sont étudiés par
+fragments et leurs littératures et données sont fragmentées, distribuées
+et parfois contradictoires. Il est difficile de construire les modèles
+complets, explicatifs de tels systèmes complexes et des interactions
+dans ces systèmes qui sont provoquées par beaucoup de facteurs
+interagissants de manière peu connue ou mal comprise. Les "Big
+mechanisms" sont de grands modèles explicatifs de systèmes complexes au
+sein desquels les interactions ont des effets causals importants. La
+collection de données de masse est de plus en plus automatisée,
+néanmoins, la création de "Big mechanisms" reste un processus manuel
+de plus en plus difficile à réaliser de par la fragmentation et la
+distribution de connaissances. L'automatisation de la conception de ces
+"Big mechanisms" permettrait une évolution majeure pour la science et
+la façon dont la recherche est réalisée. Ici nous introduisons d'un
+coté un modèle de représentation de connaissance pour la biologie afin
+d'intégrer plus ou moins immédiatement et automatiquement (ou "semi
+automatiquement") au sein de modèles causals explicatifs, des
+connaissances biologiques extraites de la littérature. Combiné à ce
+modèle, nous proposons une traduction automatique de cette
+représentation de connaissances en modèles Kappa.<br>
+<br>
+<strong>Franck Delaplace</strong> - <em>Analogous dynamics of Boolean networks</em><br>
+Different Boolean networks may reveal similar dynamics although their
+definition differs, then preventing their distinction from the
+observations. This raises the question about the sufficiency of a
+particular Boolean network for properly reproducing a modeled phenomenon
+to make realistic predictions. The question actually depends on the
+invariant properties of behaviorally similar Boolean networks. We
+address this issue by considering that the similarity is formalized by
+isomorphism on graphs modeling their dynamics. The similarity also
+depends on the  parameter governing the updating policy, called the
+"mode". We define a general characterization of the group of
+isomorphism preserving the mode. From this characterization, we deduce
+invariant structural properties of the interaction graph and conditions
+to maintain an equivalence through mode variation.<br>
+<br>
+<strong>Damien Éveillard</strong> - <em>Rechercher des modules dans les réseaux
+métaboliques</em><br>
+Les récents progrès biotechnologiques permettent de reconstruire des
+réseaux métaboliques à l&rsquo;échelle des génomes pour notamment appliquer
+les approches de type FBA. Cependant, au delà de l&rsquo;intérêt de ces
+approches pour prédire des comportements quantitatifs, l&rsquo;analyse per se
+des réseaux métaboliques reste difficile. Cette difficulté est
+particulièrement d&rsquo;actualité pour analyser le réseau métabolique qui
+résultent d&rsquo;interactions microbiennes, et qui mettent en oeuvre
+différents réseaux métaboliques issus des espèces bactériennes en
+présence. Cet exposé propose de surmonter cette difficulté avec la
+recherche des modules de flux. Cette technique analyse le réseau
+métabolique en décomposant l&rsquo;espace de solutions optimales. Nous
+montrerons, après application sur deux systèmes de référence, que cette
+décomposition est biologiquement intéressante biologique et qu&rsquo;elle
+ouvre de riches perspectives méthodologiques pour la modélisation des
+réseaux métaboliques.<br>
+<br>
+<strong>François Fages</strong> - <em>Réductions de modèles par épimorphismes de
+sous-graphes</em><br>
+Nous proposons un cadre de réduction de modèles, basé uniquement sur des
+graphes, qui permet d'organiser les bases de modèles en un ordre
+partiel. Pour capturer le processus de réduction lui-même, nous
+utilisons un type particulier de morphismes de graphes: les
+épimorphismes de sous-graphes, qui permettent la fusion et l'effacement
+de sommets. Nous commencerons en analysant l'ordre partiel qui émerge
+des opérations de fusion et d'effacement, montrerons sa complexité
+théorique et sa résolution pratique en programmation par contraintes, et
+évaluerons les performances et la précision de cette approche sur la
+base de modèles BioModels. Enfin, nous discuterons de nos travaux en
+cours sur la recherche de motifs dans les réseaux de réactions
+protéiques, ainsi que sur la prise en compte des critères dynamiques par
+des méthodes d'algèbre tropicale.<br>
+<br>
+<strong>Jérôme Feret</strong> - <em>Réduction de modèles de voies de signalisation
+intracellulaire</em><br>
+Les voies de signalisation intracellulaire sont des cascades
+d'interaction entre protéines, qui permettent à la cellule de recevoir
+des signaux, de les propager jusqu'à son noyau, puis de les intégrer,
+ce qui, in fine, influe sur le comportement global de la cellule. Les
+protéines s'associent entre elles sur des sites de liaisons, puis
+modifient la structure spatiale de leurs voisines, ce qui a pour effet
+de cacher ou de découvrir leurs autres sites de liaisons, et donc
+d'empêcher ou de faciliter d'autres interactions. De vastes bases de
+données ont été conçues pour répertorier les différentes interactions
+connues entre les sites des protéines. Cependant, nous ne savons
+toujours pas clairement comment les propriétés physiologiques de la
+cellule émergent de ces interactions. La difficulté principale est la
+grande combinatoire de ces modèles. En effet, chaque protéine a beaucoup
+de sites de liaisons. Ainsi, un très grand nombre de complexes
+biomoléculaires différents peut se former. Pour décrire ces modèles,
+nous proposons d'utiliser des graphes pour la représentation des
+complexes biomoléculaires et des règles de réécritures pour la
+spécification des interactions entre les protéines. En particulier, ces
+règles sont contextuelles : elles décrivent non seulement les
+transformations sur les complexes biomoléculaires, mais aussi les
+conditions nécessaires à ces transformations. Ceci offre une
+représentation très compacte et pratique d'un modèle. Par ailleurs ces
+règles permettent de formaliser le comportement des modèles à différents
+niveaux d'abstraction (qualitatifs ou quantitatifs). Malheureusement,
+l'écueil de la complexité combinatoire refait surface lorsque l'on
+cherche à calculer de manière effective ce comportement.<br>
+Nous proposons une méthode pour réduire la taille des systèmes
+différentiels qui décrivent le comportement de ces modèles. Nous
+utilisons une analyse du flot d'information entre les différents sites
+des complexes biomoléculaires. Ainsi, pour chaque site de liaison d'un
+complexe biomoléculaire, nous détectons quelles sont les parties de ce
+complexe qui peuvent influencer la capacité de lier ou de délier ce
+site. Nous en déduisons des paires de sites dont on peut abstraire la
+relation entre l'état de liaison, car les ensembles de sites qu'ils
+peuvent influencer sont disjoints. Cela nous permet de découper les
+espèces biomoléculaires en plus petits morceaux (en séparant de telles
+paires de sites). Nous obtenons ainsi un système différentiel portant
+sur la concentration de ces morceaux de complexes biomoléculaires, qui
+sont beaucoup moins nombreux que les complexes biomoléculaires du
+système différentiel du modèle initial, et ce sans jamais avoir écrit
+explicitement ce système initial. Pourtant, notre méthode de réduction
+est exacte : nous avons la preuve que la solution du système obtenu, est
+la projection exacte de la solution du système initial.<br>
+<br>
+<strong>Guillaume Madelaine</strong> - <em>Structural simplification of chemical
+reaction networks preserving deterministic semantics</em><br>
+We study the structural simplification of chemical reaction networks
+preserving the deterministic kinetics. We aim at finding simplification
+rules that can eliminate intermediate molecules while preserving the
+dynamics of all others. The rules should be valid even though the
+network is plugged into a bigger context. An example is
+Michaelis-Menten&rsquo;s simplification rule for enzymatic reactions. In this
+paper, we present a large class of structural simplifications rules for
+reaction networks that can eliminate intermediate molecules at
+equilibrium, without assuming that all molecules are at equilibrium,
+i.e. in a steady state. We prove the correctness of our simplification
+rules for all contexts that preserve the equilibrium of the eliminated
+molecule. Finally, we illustrate at a concrete example networks from
+systems biology, that our simplification rules may allow to drastically
+reduce the size of reaction networks in practice.<br>
+<br>
+<strong>Tarek Melliti</strong> - <em>Analysis of modular organisation of interaction
+networks based on asymptotic dynamics</em><br>
+We will present a work related to modularity in biological interaction
+networks, for which has been developped a discrete theoretical framework
+based on the analysis of the asymptotic dynamics of biological
+interaction networks. More precisely, we will exhibit formal conditions
+under which agents of interaction networks can be grouped into modules,
+forming a modular organisation. We will see that the conventional
+decomposition into strongly connected components fulfills the formal
+conditions of being a modular organisation. We will also propose a
+modular and incremental algorithm for an efficient equilibria
+computation. Furthermore, we will point out that our framework enables a
+finer analysis providing a decomposition into elementary modules,
+possibly smaller than strongly connected components.<br>
+<br>
+<strong>Aurélien Naldi</strong> - <em>Une méthode de réduction pour la manipulation de
+grands modèles logiques</em><br>
+Nous avons proposé une méthode de réduction de modèles logiques basée
+sur l'élimination de composants (sélectionnés manuellement) en
+réécrivant les fonctions logiques de leurs cibles. L'impact de cette
+réduction sur le comportement dynamique dans le cadre asynchrone est
+bien défini, en particulier elle conserve les attracteurs du système
+complet, mais peut dans certaines conditions en créer de nouveaux ou
+affecter leur atteignabilité. Après avoir introduit la méthode, je
+discuterai de critères de sélection des composants à éliminer afin de
+mieux préserver la dynamique, ainsi que de liens entre cette méthode de
+réduction et d'autres approches d'analyse statique.<br>
+<br>
+<strong>Loïc Paulevé</strong> - <em>Goal-oriented reduction of automata networks</em><br>
+I'll present on-going results on the reduction of automata networks
+dedicated to a given reachability goal (e.g., activation of a particular
+component). Based on previous work on abstract interpretation of traces
+in automata networks, I'll show that we can identify transitions that
+are useless for reaching a given goal state. At the end, the reduction
+produces an automata network that can generate all the minimal traces
+leading to the given goal, while significantly shrinking its global
+dynamics.<br>
+<br>
+<strong>Ovidiu Radulescu</strong> - <em>Taming the complexity of biochemical networks
+through model reduction and tropical geometry</em><br>
+Biochemical networks are used as models of cellular physiology with
+diverse applications in biology and medicine. In the absence of
+objective criteria to detect essential features and prune secondary
+details, networks generated from data are too big and therefore out of
+the applicability of many mathematical tools for studying their dynamics
+and behavior under perturbations. However, under circumstances that we
+can generically denote by multi-scaleness, large biochemical networks
+can be approximated by smaller and simpler networks. Model reduction is
+a way to find these simpler models that can be more easily analyzed. We
+discuss several model reduction methods for biochemical networks with
+polynomial or rational rate functions and propose as their common
+denominator the notion of tropical equilibration, meaning finite
+intersection of tropical varieties in algebraic geometry. Using tropical
+methods, one can strongly reduce the number of variables and parameters
+of biochemical network. For multi-scale networks, these reductions are
+computed symbolically on orders of magnitudes of parameters and
+variables, and are valid in wide domains of parameter and phase spaces.<br>
+<br>
+<strong>Adrien Richard</strong> - <em>Reduction of finite dynamical systems and linear
+network coding solvability</em><br>
+Linear network coding transmits data through networks by letting the
+intermediate nodes combine the messages they receive and forward the
+combinations towards their destinations. The solvability problem asks
+whether the demands of all the destinations can be simultaneously
+satisfied by using linear network coding. This problem can be formulated
+in terms of fixed points finite dynamical systems, which are usually
+called discrete networks, or Boolean networks when all the variables are
+binary variables.<br>
+Naldi, Remy, Thieffry and Chaouiya (TCS 2011) introduced technics for
+removing some variables in a finite dynamical system without changing
+the number of fixed points. In this presentation, we show that this
+reduction technics can be used to obtain new results on the linear
+network coding solvability problem.<br>
+We first show that triangle-free undirected graphs are linearly solvable
+if and only if they are solvable by routing (this is the first
+classification result for the linear network coding solvability
+problem). Then, we exhibit a new class of non-linearly solvable graphs.
+Finally, we determine large classes of strictly linearly solvable
+graphs.<br>
+<br>
+<strong>Laurent Tournier</strong> - <em>Uncovering regulations in B. subtilis metabolic
+network, combining optimal resource allocation and Boolean inference</em><br>
+We previously developed and validated the constraint-based modeling
+method "Resource Balance Analysis" (RBA) that accurately predicts
+resource allocation (i.e. growth rate, protein allocation, metabolic
+configuration) in the model bacterium Bacillus subtilis for a wide range
+of growth conditions. RBA is able to predict induced/repressed
+subsystems in the metabolic network, thus mimicking the
+repression/activation of metabolic pathways by a genetic regulator. The
+question is now to explore systematically the relation between predicted
+metabolic configurations and simulated medium composition: (a) to
+determine a rule of activation of the encoding gene and (b) to determine
+if the inferred rule coincides with the known biological regulation of
+the gene. To explore the exponential number of predicted metabolic
+configurations, we propose to use Boolean inference. In particular, we
+propose a method to infer monotone (unate) Boolean functions on a
+minimal support. Applied to the central carbon metabolism of B.
+subtilis, first results are encouraging as the method predicts most of
+the regulations as they are known today.</p>
+<h3 id=participants>Participants</h3>
+<p>Wassim ABOU-JAOUDE, Antique, ÉNS<br>
+Adrien BASSO-BLANDIN, LIP, ÉNS-Lyon<br>
+Franck DELAPLACE, IBISC, Université d'Évry - Val d'Essonne<br>
+Damien ÉVEILLARD, LINA, Université de Nantes<br>
+François FAGES, Lifeware, INRIA Paris-Rocquencourt<br>
+Éric FANCHON, TIMC-IMAG, CNRS & Université Joseph Fourier de Grenoble<br>
+Jérôme FERET, Antique, INRIA-Rocquencourt & ÉNS<br>
+Dan GOREAC, LAMA, Université Paris-Est Marne-la-Vallée<br>
+Cédric LHOUSSAINE, Cristal, Université Lille 1<br>
+Guillaume MADELAINE, Cristal, Université Lille 1<br>
+Tarek MELLITI, IBISC, Université d'Évry - Val d'Essonne<br>
+Aurélien NALDI, DIMNP, Université Montpellier 2<br>
+Joachim NIEHREN, Cristal, INRIA-Lille<br>
+Loïc PAULEVÉ, LRI, CNRS & Université Paris Sud<br>
+Kévin PERROT, LIF, Aix-Marseille Université<br>
+Ovidiu RADULESCU, DIMNP, Université de Montpellier<br>
+Élisabeth REMY, I2M, Aix-Marseille Université<br>
+Adrien RICHARD, I3S, CNRS & Université de Nice - Sophia Antipolis<br>
+Sylvain SENÉ, LIF, Aix-Marseille Université<br>
+Anne SIEGEL, IRISA, CNRS & Université de Rennes<br>
+Laurent TOURNIER, INRA Jouy en Josas</p>
+<hr width=100% id=EOF>
+<p style=color:#777>Dernière modification le 28/05/2015</p>
+</div>
+</div>
+<nav class=post-pagination>
+<a class=newer-posts href=https://www.bioss-cnrs.fr/beta/manif/nantes_201509/nantes201509.html>
+Suivant<br>1st Bioss Workshop: "Systemic Symbolic Biology"
+</a>
+<a class=older-posts href=https://www.bioss-cnrs.fr/beta/projets.html>
+Précédent<br>Contrats et projets en lien avec le groupe
+</a>
+</nav>
+<div class=post-comment-wrapper>
+</div>
+</div>
+</div>
+</div>
+</div><div id=single-column-footer><p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/beta/js/journal.js></script>
 </body>
 </html>

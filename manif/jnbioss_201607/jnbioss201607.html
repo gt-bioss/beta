@@ -1,9 +1,607 @@
-<!DOCTYPE html>
-<html>
-<head>
-        <meta http-equiv="refresh" content="0; URL=https://www.bioss-cnrs.fr/old/manif/jnbioss_201607/jnbioss201607.html">
+<!doctype html><html><head>
+<title>Journées annuelles du GT Bioss (2016, 2e édition)</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="Journées annuelles du GT Bioss (2016, 2e édition)">
+<meta property="og:description" content="Les 1 et 2 juillet 2016 à Lyon">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.bioss-cnrs.fr/beta/manif/jnbioss_201607/jnbioss201607.html"><meta property="article:section" content="events">
+<meta property="article:published_time" content="2016-07-01T00:00:00+00:00">
+<meta property="article:modified_time" content="2016-07-01T00:00:00+00:00"><meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/beta/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/journal.min.e98aba1605f3a725fad0875a5584b620ed0fd58ea79d459f02fb560d7738fab4.css integrity="sha256-6Yq6FgXzpyX60IdaVYS2IO0P1Y6nnUWfAvtWDXc4+rQ=" media=screen>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/dark-mode.min.92e13ee85b2c4587b9a2c423bde35865b35fa7449a8e1babb34f5c66907a72e1.css integrity="sha256-kuE+6FssRYe5osQjveNYZbNfp0Sajhurs09cZpB6cuE=" media=screen>
+<script src=/beta/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script src=/beta/js/toc.js></script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
 </head>
 <body>
-Redirecting to <a href="/old/manif/jnbioss_201607/jnbioss201607.html">old website</a>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=https://www.bioss-cnrs.fr/beta/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block nav-link-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block nav-link-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+<p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=https://www.bioss-cnrs.fr/beta/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=https://www.bioss-cnrs.fr/beta/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<div class=post>
+<div class=post-head-wrapper-text-only>
+<div class=post-title>
+Journées annuelles du GT Bioss (2016, 2e édition)
+<div class=post-subtitle>
+Les <strong>1 et 2 juillet 2016</strong> à Lyon
+</div>
+<div class=post-meta>
+</div>
+</div>
+</div>
+<div class=post-body-wrapper>
+<div class=post-body v-pre>
+<h3 id=informations-générales>Informations générales</h3>
+<p>Date : 1er et 2 juillet 2016</p>
+<p>Lieu : Salle "conférence", 1, place de l'École (en rez de chaussée,
+en dessous de la Maison des mathématiques et de l'informatique, en face
+de l'amphithéâtre Charles Mérieux), 69007 Lyon<br>
+Plan d'accès
+<a href="https://www.google.fr/maps/place/1+Place+de+l'%C3%89cole,+69007+Lyon-7E-Arrondissement/@45.729955,4.8257707,17z/data=!3m1!4b1!4m2!3m1!1s0x47f4ea2beb0a4f0b:0x6b747c560d0e395f">ici</a></p>
+<p>Organisateurs : Olivier Gandrillon, Cédric Lhoussaine, Élisabeth Remy,
+Sylvain Sené et Anne Siegel</p>
+<p>La deuxième édition des journées annuelles du GT Bioss va se dérouler à
+la suite des Journées ouvertes de biologie, informatique et
+mathématiques (<a href=http://jobim2016.sciencesconf.org>JOBIM</a>) organisées
+par la Société française de bio-informatique
+(<a href=http://www.sfbi.fr>SFBI</a>). Ainsi, les 1er et 2 juillet 2016, les
+membres du GT auront le plaisir de se rencontrer autour de conférences
+autour des thèmes suivants :\</p>
+<ul>
+<li>la modélisation stochastique en biologie ;\</li>
+<li>la régulation génétique ;\</li>
+<li>le métabolisme.</li>
+</ul>
+<h3 id=inscription>Inscription</h3>
+<p>L'inscription, gratuite mais obligatoire, se fait en remplissant le
+formulaire accessible
+<a href="https://docs.google.com/forms/d/1cs20k_5aeBQK8gFkhNmgh9uSIjmDuRkKZqnWMcrYCwk/viewform?c=0&w=1&usp=mail_form_link">ici</a>.</p>
+<h3 id=orateurs-invités>Orateurs invités</h3>
+<p>Grégory BATT, INRIA Saclay<br>
+Marcelline KAUFMAN, Université libre de Bruxelles<br>
+Marie-France SAGOT, INRIA Lyon\</p>
+<h3 id=programme>Programme</h3>
+<h4 id=vendredi-1er-juillet>Vendredi 1er juillet</h4>
+<p><strong>09h00 - 09h30</strong> - <strong>Accueil</strong><br>
+<strong>09h30 - 09h45</strong> - <strong>Introduction des journées</strong><br>
+<strong>09h45 - 10h30</strong> - <strong>Conférence plénière</strong> - Grégory Batt - <em>Predicting
+long-term effects of apoptosis-inducing drug treatments: coupling signal
+transduction pathways with stochastic protein turnover models</em><br>
+<strong>10h30 - 11h00</strong> - Bertrand Miannay - <em>Identification des voies de
+signalisation impliquées dans le myélome multiple par programmation par
+contrainte</em><br>
+<strong>11h00 - 11h30</strong> - Arnaud Bonnaffoux - <em>Toward a dynamic
+multi-scale/level approach for gene regulatory network inference</em><br>
+<strong>11h30 - 12h00</strong> - Nicolas Schabanel - <em>Folding Turing is hard but
+feasible</em><br>
+<strong>12h00 - 13h30</strong> - <strong>Pause déjeuner</strong><br>
+<strong>13h30 - 14h15</strong> - <strong>Conférence plénière</strong> - Marie-France Sagot -
+<em>Species interactions from a metabolism perspective</em><br>
+<strong>14h15 - 14h45</strong> - Nils Giordano - <em>Dynamical allocation of cellular
+resources as an optimal control problem</em><br>
+<strong>14h45 - 15h15</strong> - Victorien Delannée - <em>A modeling approach to
+evaluate the balance between bioactivation and detoxification of MeIQx
+in human hepatocytes</em><br>
+<strong>15h15 - 15h45</strong> - <strong>Discussion Bioss / GDR</strong><br>
+<strong>15h45 - 16h15</strong> - <strong>Pause</strong><br>
+<strong>16h15 - 16h45</strong> - Hugues Berry - <em>Estimating the effects of spatial
+non-homogeneities in intracellular diffusion-reactions</em><br>
+<strong>16h45 - 17h15</strong> - Dan Goreac - <em>Hybrid designing using stochastic
+backward equations</em><br>
+<strong>17h15 - 17h45</strong> - Guillaume Madelaine - <em>Structural simplifications of
+reaction networks: the confluence problem</em><br>
+<strong>17h45 - 18h15</strong> - Ferdinanda Camporesi - <em>Context-sensitive flow
+analyses: a hierarchy of model reductions</em>\</p>
+<h4 id=samedi-2-juillet>Samedi 2 juillet</h4>
+<p><strong>09h00 - 09h45</strong> - <strong>Conférence plénière</strong> - Marcelline Kaufman - <em>On
+multistationarity in chemical reaction networks</em><br>
+<strong>09h45 - 10h15</strong> - Kévin Perrot - <em>On the flora of asynchronous locally
+non-monotonic Boolean networks</em><br>
+<strong>10h15 - 10h45</strong> - Élisabeth Remy - <em>Discrete dynamics of compound
+regulatory circuits</em><br>
+<strong>10h45 - 11h00</strong> - <strong>Pause</strong><br>
+<strong>11h00 - 11h30</strong> - Loïc Paulevé - <em>Around reachability in automata
+networks</em><br>
+<strong>11h30 - 12h00</strong> - Emna Ben Abdallah - <em>Inference of biological
+regulatory networks from time series data</em><br>
+<strong>12h00 - 12h30</strong> - Adrien Richard - <em>Points fixes dans les réseaux
+booléens monotones</em>\</p>
+<h3 id=résumés>Résumés</h3>
+<p><strong>Grégory Batt</strong> - <em>Predicting long-term effects of apoptosis-inducing
+drug treatments: coupling signal transduction pathways with stochastic
+protein turnover models</em><br>
+TRAIL is an anti-cancer drug that induces apoptosis selectively in
+cancer cells. Unfortunately even high doses of TRAIL do not kill all
+cells and subsequent TRAIL treatments are transiently less effective.
+Despite extensive studies, a mechanistic understanding of these
+phenomena is still lacking. In this talk, I will present an extension of
+a previously-proposed model describing TRAIL signal transduction in Hela
+cells (Spencer et al, Nature 2011) with models accounting for the
+turnover of the proteins involved in the pathway at the cell level and
+the dynamics (growth and death) of the cell population in monolayers or
+in 3D spheroids. This model is minimalistic in the sense that it uses
+default values from the literature for all but two parameters. Yet, it
+explains the existence of survivors (fractional killing), the increased
+resistance of the surviving population and its transient aspect. The
+analysis of model predictions calls into question the importance of
+survival pathways and highlights the critical role of the stochastic
+turnover of proteins in zymogen-based pathways in which activated forms
+are rapidly degraded.<br>
+<br>
+<strong>Emna Ben Abdallah</strong> - <em>Inference of biological regulatory networks
+from time series data</em><br>
+With the development of high-throughput data, there is a growing need
+for methods that automatically generate (resp. revise) admissible
+models. Our research aims at providing a logical approach to infer
+Biological Regulatory Networks based on given time series data. We
+propose a new methodology for models expressed through a timed extension
+of the Process Hitting framework (well suited for biological systems).
+The main purpose is to have as a result the most consistent network as
+possible with the observed data. The originality of our work relies on
+the integration of quantitative time delays directly in our learning
+approach.<br>
+Taking as input a background knowledge under the form of influence graph
+and time series data, the contribution of our method lies in the fact
+that we identify the set of actions between biological components by
+concretizing the signs (negative or positive) besides providing
+thresholds and associating the quantitative time delays. Starting from
+the structure of the system and its experimental time series, the method
+addresses both inference and revision: (1) If no previous dynamic model
+is given, we infer the dynamics of the system. (2) Otherwise we take
+profit from new time series to revise actions and delays.<br>
+We will show the benefits of such automatic approach on dynamical
+biological model, the circadian clock, and we conduct benchmarks on the
+DREAM4 datasets, a popular reverse-engineering challenge, in order to
+discuss the computational performances of our algorithm.<br>
+<br>
+<strong>Hugues Berry</strong> - <em>Estimating the effects of spatial non-homogeneities
+in intracellular diffusion-reactions</em><br>
+The inner of living cells exhibits disorder, non-homogeneity and
+obstruction. For instance, cell membranes are heterogeneous collections
+of hierarchical spatial domains with various length scales and
+timescales (e.g., fences, lipid rafts, and caveolae) that spatially
+modulate the diffusion of proteins. This defines a spatially
+nonhomogeneous diffusion problem with position-dependent diffusion
+coefficient. The impact of these deviations from simple Brownian motion
+on the biochemical reactions that take place in cells cannot be studied
+with the classical mass-action laws of biochemical kinetics and are just
+starting to be explored by spatially-explicit stochastic simulations. In
+this talk, I will present an overview of the recent modelling work
+carried out in our group on the effects of receptor clustering on the
+dynamics of ligand-binding equilibrium, and on correlations in gene
+positions for repressilator-like gene regulation loops. Our results
+suggest that spatial non-homogeneities are potent modulators of the
+apparent affinity of the equilibrium reaction or of the dynamical regime
+itself, even when the elementary reaction rates are not altered.<br>
+<br>
+<strong>Arnaud Bonnaffoux</strong> - <em>Toward a dynamic multi-scale/level approach for
+gene regulatory network inference</em><br>
+Gene regulatory networks (GRN) play an important role in many biological
+processes, such as differentiation, and their identification has raised
+great expectations for understanding cell behavior. Many computational
+GRN inference approaches have been described, which are based on
+expression data but they face common issues such as data scarcity, high
+dimensionality or population blurring (Chai et al., 2014). We believe
+that recent high-throughput single cell expression data (see e.g. Pina
+et al., 2012 ; Shalek et al., 2014) acquired in time-series will allow
+to overcome these issues and give access to causality, instead of
+« simple » correlation, for gene interactions. Causality is very
+important for mechanistic model inference and biological relevance
+because it enables the emergence of cellular decision-making. Emergent
+properties of a mechanistic model of a GRN should then match with
+multi-scale (molecular/cellular) and multi-level (single
+cell/population) observations. We will expose a GRN inference framework
+based on these assumptions. It follows three steps:\</p>
+<ol>
+<li>Node parametric inference. We have inferred the parameters from a
+stochastic mechanistic model of gene expression, the Random Telegraph
+model (Kim and Marioni, 2013), thank's to time-series single cell
+expression data from a population of chicken erythrocyte progenitor
+during their differentiation process (Gandrillon et al., 1999)\</li>
+<li>Model reduction. This is mostly an ongoing work, and will make use of
+specific constraints applying to the network.\</li>
+<li>The final step will consist in network inference constrained by
+dynamic multi-scale/level observations.<br>
+<br>
+<strong>Ferdinanda Camporesi</strong> - <em>Context-sensitive flow analyses: a hierarchy
+of model reductions</em><br>
+Rule-based modelling allows very compact descriptions of protein-protein
+interaction networks. However, combinatorial complexity increases again
+when one attempts to describe formally the behaviour of the networks,
+which motivates the use of abstractions to make these models more
+coarse-grained. Context-insensitive abstractions of the intrinsic flow
+of information among the sites of chemical complexes through the rules
+have been proposed to infer sound coarse-graining, providing an
+efficient way to find macro-variables and the corresponding reduced
+models. In this paper, we propose a framework to allow the tuning of the
+context-sensitivity of the information flow analyses and show how these
+finer analyses can be used to find fewer macro-variables and smaller
+reduced differential models.<br>
+<br>
+<strong>Victorien Delannée</strong> - <em>A modeling approach to evaluate the balance
+between bioactivation and detoxification of MeIQx in human hepatocytes</em><br>
+Heterocyclic aromatic amines (HAA) are environmental and food
+contaminants that are potentially carcinogen for human.
+2-Amino-3-methylimidazo(4,5-f)-quinoxaline (MeIQx) is one of the most
+abundant HAA formed in cooked meat. MeIQx is metabolized by cytochrome
+P450 1A2 in human liver into detoxification and bioactivation products.
+Once bioactivated, MeIQx metabolites can lead to DNA adduct formation
+responsible for further genome instability. Using a computational
+approach, we develop a numerical model for MeIQx metabolism that
+predicts the MeIQx biotransformation into detoxification or
+bioactivation pathways according to the concentration of MeIQx. Our
+model permits to investigate the balance between bioactivation (i.e. DNA
+adduct formation pathway through Ester-O-NH-MeIQx) and detoxification of
+MeIQx in order to predict the behaviour of this environmental
+contaminant in human liver.<br>
+Our results demonstrate that 1) the detoxification pathway predominates,</li>
+</ol>
+<ol start=2>
+<li>predicting the bioactivation and the detoxification for any initial
+concentration of MeIQx at any time is feasible for any dataset and 3)
+the ratio between detoxification and bioactivation pathways is not
+linear and shows a maximum at 10µM of MeIQx in hepatocyte cell model.<br>
+<br>
+<strong>Nils Giordano</strong> - <em>Dynamical allocation of cellular resources as an
+optimal control problem: novel insights into microbial growth
+strategies</em><br>
+Microbial physiology exhibits growth laws that relate the macromolecular
+composition of the cell to the growth rate. Recent work has shown that
+these empirical regularities can be derived from coarse-grained models
+of resource allocation. While these studies focus on steady-state
+growth, such conditions are rarely found in natural habitats, where
+microorganisms are continually challenged by environmental fluctuations.
+The aim of this paper is to extend the study of microbial growth
+strategies to dynamical environments, using a self-replicator model. We
+formulate dynamical growth maximization as an optimal control problem
+that can be solved using Pontryagin&rsquo;s Maximum Principle. We compare this
+theoretical gold standard with different possible implementations of
+growth control in bacterial cells. We find that simple control
+strategies enabling growth-rate maximization at steady state are
+suboptimal for transitions from one growth regime to another, for
+example when shifting bacterial cells to a medium supporting a higher
+growth rate. A near-optimal control strategy in dynamical conditions is
+shown to require information on several, rather than a single
+physiological variable. Interestingly, this strategy has structural
+analogies with the regulation of ribosomal protein synthesis by ppGpp in
+the enterobacterium Escherichia coli. It involves sensing a mismatch
+between precursor and ribosome concentrations, as well as the adjustment
+of ribosome synthesis in a switch-like manner. Our results show how the
+capability of regulatory systems to integrate information about several
+physiological variables is critical for optimizing growth in a changing
+environment.<br>
+<br>
+<strong>Dan Goreac</strong> - <em>Hybrid designing using stochastic backward equations</em><br>
+We present some targeted-behaviour based issues in the hybrid modelling
+of networks. The common method is derived from the theory of BSDEs
+(backward stochastic differential equations) by interpreting the
+reaction speeds as externally controlled (thus, modifiable) parameters.
+In the case of first-order (linear) models, we give explicit (algebraic)
+conditions on the sets of parameters leading to "controllability"
+(targeted behaviour). For more general systems, if the time allows it,
+we give an intuition on how parameters might be chosen by using
+reflected backward equations and embedding in spaces of measures.<br>
+<br>
+<strong>Marcelline Kaufman</strong> - <em>On multistationarity in chemical reaction
+networks</em><br>
+Résumé au format pdf <a href=res/res_Kaufman.pdf>ici</a>.<br>
+<br>
+<strong>Guillaume Madelaine</strong> - <em>Structural simplifications of reaction
+networks: the confluence problem</em><br>
+Models in system biology are often big, and need to be simplified in
+order to be analyzed, simulated or verified. We will first present a set
+of simplification rules for reaction networks without kinetic rates.
+This simplification preserves the non-deterministic semantics, in terms
+of reachability of final strongly connected components, called
+attractors. Then we will extend the reaction networks with kinetic
+rates. We will show that, under partial steady-state assumptions, we can
+simplify the networks by removing some linear intermediate molecular
+species, while preserving the deterministic semantics of the other
+species. We will focus on the confluence of this simplification, that is
+do we always obtain the same fully simplified network, independently of
+the order in which the simplification rules are applied. We will show
+that removing the linear intermediate species is not confluent in
+general. By adding another rule that simplifies some "dependent
+reactions", we will show that we can always obtain the same structure
+of the network and the same ODEs. However, the distribution of the
+kinetic rates between the reactions can be different.<br>
+<br>
+<strong>Bertrand Miannay</strong> - <em>Identification des voies de signalisation
+impliquées dans le myélome multiple par programmation par contrainte</em><br>
+Résumé au format pdf <a href=res/res_Miannay.pdf>ici</a>.<br>
+<br>
+<strong>Loïc Paulevé</strong> - <em>Around reachability in automata networks</em><br>
+Many elaborated questions in systems biology involve the one of
+reachability : the existence / inevitability of a sequence of events
+leading from a state to another. Some involve the verification of
+reachability, many more the inference of mutations for its control.
+Reachability is a difficult computational problem: it is PSPACE-complete
+for Automata Networks / Petri nets with finite discrete state space.
+Methods relying on network topology, concurrency, abstract
+interpretation, model reduction, aim at coping with reachability in
+large scale networks. In this talk, I'll give an overview of a range of
+these methods and related tools, with their applications to
+model-checking, dynamical bifurcation identification, control target
+prediction, and cellular differentiation.<br>
+<br>
+<strong>Kévin Perrot</strong> - <em>On the flora of asynchronous locally non-monotonic
+Boolean networks</em><br>
+Studies on the dynamics of Boolean networks (BNs) have mainly focused on
+monotonic networks, where fundamental questions on the links relating
+their static and dynamical properties have been raised and addressed. In
+this presentation, we will explore analogous questions on non-monotonic
+networks, xor-BNs, that are BNs where all the local transition functions
+are xor-functions. Using algorithmic tools, we will present a general
+characterisation of the asynchronous dynamics for most of the cactus
+xor-BNs and strongly connected xor-BNs, through new bisimulation
+equivalences specific to xor-BANs.<br>
+<br>
+<strong>Élisabeth Remy</strong> - <em>Discrete dynamics of compound regulatory
+circuits</em><br>
+In biological regulatory networks represented in terms of signed,
+directed graphs, topological motifs such as circuits are known to play
+key dynamical roles. We present results on the dynamical impact of the
+addition of a short-cut in a regulatory circuit. More precisely, based
+on a Boolean formalisation of regulatory graphs, we have unrolled
+complete descriptions of the discrete dynamics of particular motifs,
+under the synchronous and asynchronous updating schemes. These motifs
+are made of a circuit of arbitrary length, combining positive and
+negative interactions in any sequence, encompassing a short circuit, and
+using AND, OR and XOR logical rules.<br>
+<br>
+<strong>Adrien Richard</strong> - <em>Points fixes dans les réseaux booléens monotones</em><br>
+Les réseaux booléens sont des systèmes dynamiques où chaque variable ne
+peut prendre que deux états possibles: 0 ou 1. Depuis les travaux
+pionniers de Kauffman et Thomas, ce sont des modèles très classiques
+pour les réseaux de gènes. Dans ce contexte, les points fixes sont d'un
+intérêt particulier: ils correspondent à des patterns stables
+d'expression des gènes souvent reliés à des fonctions cellulaires bien
+précises. Cependant, les premières informations disponibles sur un
+réseau de gènes concernent généralement le graphe d'interaction du
+réseau et non sa dynamique.<br>
+Une question naturelle est donc la suivante: que peut-on dire sur les
+points fixes d'un réseau booléen en fonction de son graphe
+d'interaction seulement ?<br>
+Dans cette exposé, on présente une étude du plus grand nombre de points
+fixes qu'un réseau booléen monotone peut admettre en fonction de son
+graphe d'interaction. On donnera des bornes inférieures et supérieures
+qui ne dépendent que de la structure des cycles du graphe
+d'interaction. Les deux paramètres centraux seront, d'une part, la
+taille d'un plus petit ensemble de sommets intersectant tous les cycles
+et, d'autre part, le plus grand nombre de cycles disjoints. L'étude
+fera intervenir des théorèmes, classiques en combinatoire, sur le
+treillis booléen et ses antichaines.<br>
+C'est un travail réalisé en collaboration avec Julio Aracena et Lilian
+Salinas (Université de Concepcion, Chili) disponible à l'adresse
+suivante: <a href=http://arxiv.org/abs/1602.03109>http://arxiv.org/abs/1602.03109</a>.<br>
+<br>
+<strong>Marie-France Sagot</strong> - <em>Species interactions from a metabolism
+perspective</em><br>
+The frontier between different species may be considered very fuzzy as
+is more and more observed. Organisms are no longer perceived as single
+genetically identical individuals and are rather considered as part of
+communities. At its extreme, one could see thus the whole of life as
+forming one single community, or a community of communities interacting
+sometimes closely and for long periods of evolutionary time. Such
+interactions appear essential to understand some if not all of the most
+fundamental evolutionary and functional questions related to living
+organisms. They however remain very little explored by computational
+biologists, perhaps due to the difficult modelling and computational
+issues raised. Yet, because of the complexity and singularity of these
+communities, it is clear that experimental data alone do not allow to
+fully understand the global capacities and functions of these organisms
+and their interactions. In this talk, I will briefly present some of the
+models and algorithms, in the case related to metabolism, that we have
+recently been developing with the goal of better understanding some such
+close and often persistent interactions. I will also mention a much
+longer term objective of this work that would be to become able in some
+cases to suggest the means of controlling for equilibrium in an
+interacting community.<br>
+<br>
+<strong>Nicolas Schabanel</strong> - <em>Folding Turing is hard but feasible</em><br>
+We introduce and study the computational power of Oritatami, a
+theoretical model to explore greedy molecular folding, by which the
+molecule begins to fold before waiting the end of its production. This
+model is inspired by our recent experimental work demonstrating the
+construction of shapes at the nanoscale by folding an RNA molecule
+during its transcription from an engineered sequence of synthetic DNA.
+While predicting the most likely conformation is known to be NP-complete
+in other models, Oritatami sequences fold optimally in linear time.
+Although our model uses only a small subset of the mechanisms known to
+be involved in molecular folding, we show that it is capable of
+efficient universal computation, implying that any extension of this
+model will have this property as well.<br>
+We develop several general design techniques for programming these
+molecules. Our main result in this direction is an algorithm in time
+linear in the sequence length, that finds a rule for folding the
+sequence deterministically into a prescribed set of shapes depending of
+its environment. This shows the corresponding problem is fixed-parameter
+tractable although we proved it is NP-complete in the number of possible
+environments. This algorithm was used effectively to design several key
+steps of our constructions.\</li>
+</ol>
+<h3 id=participants>Participants</h3>
+<p>Jalouli ACHREF, Université de Limoges<br>
+Vicente ACUNA, CMM, Santiago, Chili<br>
+Émilie ALLART, CRISTAL, Université de Lille<br>
+Adel Amar AMOURI, Dpt. de biologie, Université d'Oran<br>
+Emna BEN ABDALLAH, IRCCyN, École centrale de Nantes<br>
+Adrien BASSO-BLANDIN, LIP, ENS-Lyon<br>
+Grégory BATT, Lifeware, INRIA Saclay<br>
+Guillaume BEAUMONT, IPS2, Université Paris Sud<br>
+Emmanuelle BECKER, IRSET, Université de Rennes<br>
+Hugues BERRY, Beagle, INRIA Lyon<br>
+Arnaud BONNAFFOUX, LBMC, ENS-Lyon<br>
+Ferdinanda CAMPORESI, DIENS, ENS<br>
+Thomas COKELAER, Biomics, Institut Pasteur<br>
+Victorien DELANNÉE, IRISA, Université de Rennes<br>
+Ronan DUCHESNE, LBMC, ENS-Lyon<br>
+Maxime FOLSCHETTE, I3S, Université de Nice - Sophia Antipolis<br>
+Enrico FORMENTI, I3S, Université de Nice - Sophia Antipolis<br>
+Olivier GANDRILLON, LBMC, CNRS Lyon<br>
+Nils GIORDANO, INRIA Grenoble<br>
+Dan GOREAC, LAMA, Université Paris-Est Marne-la-Vallée<br>
+Carito GUZIOLOWSKI, IRCCyN, École centrale de Nantes<br>
+Pierre GUILLON, I2M, CNRS Marseille<br>
+Russ HARMER, LIP, ENS-Lyon<br>
+Ulysse HERBACH, LBMC, ENS-Lyon<br>
+Marcelline KAUFMAN, Dpt. de chimie physique et biologie théorique,
+Université libre de Bruxelles<br>
+Cédric LHOUSSAINE, CRISTAL, Université de Lille<br>
+Guillaume MADELAINE, CRISTAL, Université de Lille<br>
+Bertrand MIANNAY, IRCCyN, École centrale de Nantes<br>
+Jean-Michel MULLER, LIP, CNRS Lyon<br>
+Loïc PAULEVÉ, LRI, CNRS Orsay<br>
+Kévin PERROT, LIF, Université d'Aix-Marseille<br>
+Arnaud PORET, LBMC, ÉNS-Lyon<br>
+Sylvain PRIGENT, Sysbio, Université de Chalmers<br>
+Élisabeth REMY, I2M, CNRS Marseille<br>
+Adrien RICHARD, I3S, CNRS Nice - Sophia Antipolis<br>
+Marie-France SAGOT, ERABLE, INRIA Lyon<br>
+Nicolas SCHABANEL, IRIF, CNRS Paris<br>
+Sylvain SENÉ, LIF, Université d'Aix-Marseille<br>
+Anne SIEGEL, IRISA, CNRS Rennes<br>
+Laurent TRILLING, TIMC-IMAG, Université de Grenoble<br>
+Jean-Yves TROSSET, BIRL, SupBioTech</p>
+<hr width=100% id=EOF>
+<p style=color:#777>Dernière modification le 01/07/2016</p>
+</div>
+</div>
+<nav class=post-pagination>
+<a class=newer-posts href=https://www.bioss-cnrs.fr/beta/manif/lille_201611/lille201611.html>
+Suivant<br>Workshop "Metabolism in Systems Biology"
+</a>
+<a class=older-posts href=https://www.bioss-cnrs.fr/beta/manif/jnbioss_201511/jnbioss201511.html>
+Précédent<br>Journées annuelles du GT Bioss (2015, 1e édition)
+</a>
+</nav>
+<div class=post-comment-wrapper>
+</div>
+</div>
+</div>
+</div>
+</div><div id=single-column-footer><p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/beta/js/journal.js></script>
 </body>
 </html>

@@ -1,9 +1,222 @@
-<!DOCTYPE html>
-<html>
-<head>
-        <meta http-equiv="refresh" content="0; URL=https://www.bioss-cnrs.fr/old/manif/biossia_201812/biossia201812.html">
+<!doctype html><html><head>
+<title>Journées Bioss-IA (2e édition)</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="Journées Bioss-IA (2e édition)">
+<meta property="og:description" content="Les 18 et 19 décembre 2018 à l&rsquo;Institut Pasteur, Paris">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.bioss-cnrs.fr/beta/manif/biossia_201812/biossia201812.html"><meta property="article:section" content="events">
+<meta property="article:published_time" content="2018-12-18T00:00:00+00:00">
+<meta property="article:modified_time" content="2018-12-18T00:00:00+00:00"><meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/beta/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/journal.min.e98aba1605f3a725fad0875a5584b620ed0fd58ea79d459f02fb560d7738fab4.css integrity="sha256-6Yq6FgXzpyX60IdaVYS2IO0P1Y6nnUWfAvtWDXc4+rQ=" media=screen>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/dark-mode.min.92e13ee85b2c4587b9a2c423bde35865b35fa7449a8e1babb34f5c66907a72e1.css integrity="sha256-kuE+6FssRYe5osQjveNYZbNfp0Sajhurs09cZpB6cuE=" media=screen>
+<script src=/beta/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script src=/beta/js/toc.js></script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
 </head>
 <body>
-Redirecting to <a href="/old/manif/biossia_201812/biossia201812.html">old website</a>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=https://www.bioss-cnrs.fr/beta/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block nav-link-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block nav-link-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+<p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=https://www.bioss-cnrs.fr/beta/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=https://www.bioss-cnrs.fr/beta/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<div class=post>
+<div class=post-head-wrapper-text-only>
+<div class=post-title>
+Journées Bioss-IA (2e édition)
+<div class=post-subtitle>
+Les <strong>18 et 19 décembre 2018</strong> à l&rsquo;Institut Pasteur, Paris
+</div>
+<div class=post-meta>
+</div>
+</div>
+</div>
+<div class=post-body-wrapper>
+<div class=post-body v-pre>
+<p><img src=./gdria.jpg alt> <img src=./logo-gdria.jpg alt></p>
+<h3 id=informations-générales>Informations générales</h3>
+<p><strong>Journées financées par le <a href=https://www.gdria.fr/>GDR IA</a>, Bioss et
+Psay CompBio (Paris-Saclay), avec remerciements à l&rsquo;institut Pasteur
+pour le prêt de la salle et à Denise Derhy et Gregory Batt pour l&rsquo;aide
+en local à l&rsquo;organisation.</strong></p>
+<p><strong>Date</strong> : 18 décembre après-midi et 19 décembre matin 2018</p>
+<p><strong>Lieu</strong> : grande salle du Bât Lwoff (Rétrovirus 14), Institut Pasteur,
+28 rue du Docteur Roux, 75015 Paris. <strong>Se munir d'une pièce
+d'identité</strong> </p>
+<p><strong>Organisateur</strong> : Philippe Dague </p>
+<h3 id=mardi-18-décembre>Mardi 18 décembre</h3>
+<p>13h30-14h00 Accueil<br>
+14h00-14h45 Adrien Husson : Transition logic for rule-based biology: a
+tractable, hybrid specification framework<br>
+14h45-15h30 Andrei Doncescu, Vincent Risch, Pierre Siegel : Quelques
+formalismes et algorithmes d&rsquo;IA pour les réseaux biologiques<br>
+15h30-16h15 Loïc Paulevé : Reconciling qualitative and abstract (and
+scalable) reasoning with Boolean networks<br>
+16h15-16h45 Pause<br>
+16h45-17h30 Laurent Trilling : Constraint ASP Based Inference of Delay
+Parameters for Discrete Genetic Networks<br>
+17h30-18h15 Jérôme Feret : Conservative approximations of models of
+polymers<br>
+20h00 Dîner (restaurant)<br>
+\</p>
+<h3 id=mercredi-19-décembre>Mercredi 19 décembre</h3>
+<p>9h00-9h15 Accueil<br>
+9h15-10h00 Marie Beurton-Aimar : Introduction to Deep Learning and its
+Tools applied to Biology<br>
+10h00-10h45 Hervé Isambert : Learning causal and non-causal networks
+from large scale genomic and clinical data<br>
+10h45-11h15 Pause<br>
+11h15-12h00 Ovidiu Radulescu : Hybrid symbolic-numeric learning of
+Markov eukaryotic promoters models<br>
+12h00-12h45 Engelbert Mephu Nguifo : A Novel Computational Approach for
+Global Alignment for Multiple Biological Networks<br>
+12h45-13h45 Déjeuner (plateaux repas)<br>
+13h45-14h30 Eugenio Cinquemani : Towards automated control of synthetic
+E.coli communities<br>
+14h30-15h15 Vincent Danos : Stochastic analysis of reaction-division
+systems<br>
+15h15-16h00 Maxime Folschette : Search of Therapeutic Targets on the
+Hepatocellular Carcinoma with Database Extraction and Graph Coloring
+Methods<br>
+16h00-16h30 Julien Martinelli : Unsupervised learning of chemical
+reaction networks from data time series\</p>
+<hr width=100% id=EOF>
+<p style=color:#777>Dernière modification le 18/12/2018</p>
+</div>
+</div>
+<nav class=post-pagination>
+<a class=newer-posts href=https://www.bioss-cnrs.fr/beta/manif/biossia_201905/biossia201905.html>
+Suivant<br>Journées Bioss-IA (3e édition)
+</a>
+<a class=older-posts href=https://www.bioss-cnrs.fr/beta/manif/jnbioss_201807/jnbioss201807.html>
+Précédent<br>Journées annuelles du GT Bioss (2018, 4e édition)
+</a>
+</nav>
+<div class=post-comment-wrapper>
+</div>
+</div>
+</div>
+</div>
+</div><div id=single-column-footer><p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/beta/js/journal.js></script>
 </body>
 </html>

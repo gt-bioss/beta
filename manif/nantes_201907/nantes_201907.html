@@ -1,9 +1,471 @@
-<!DOCTYPE html>
-<html>
-<head>
-        <meta http-equiv="refresh" content="0; URL=https://www.bioss-cnrs.fr/old/manif/nantes_201907/nantes_201907.html">
+<!doctype html><html><head>
+<title>Journées Bioss-Médecine-Personalisée</title>
+<meta charset=utf-8>
+<meta name=X-UA-Compatible content="IE=edge">
+<meta name=google-site-verification content>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+<meta content="telephone=no" name=format-detection>
+<meta name=description content>
+<meta name=renderer content="webkit">
+<meta name=theme-color content="#ffffff">
+<meta property="og:title" content="Journées Bioss-Médecine-Personalisée">
+<meta property="og:description" content="Les 1 et 2 juillet 2019 à Nantes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.bioss-cnrs.fr/beta/manif/nantes_201907/nantes_201907.html"><meta property="article:section" content="events">
+<meta property="article:published_time" content="2019-07-01T00:00:00+00:00">
+<meta property="article:modified_time" content="2019-07-01T00:00:00+00:00"><meta property="og:site_name" content="GT BIOSS">
+<link type=text/css rel=stylesheet href=/beta/vendor/css/bootstrap.min.css>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/journal.min.e98aba1605f3a725fad0875a5584b620ed0fd58ea79d459f02fb560d7738fab4.css integrity="sha256-6Yq6FgXzpyX60IdaVYS2IO0P1Y6nnUWfAvtWDXc4+rQ=" media=screen>
+<link rel=stylesheet href=https://www.bioss-cnrs.fr/beta/scss/dark-mode.min.92e13ee85b2c4587b9a2c423bde35865b35fa7449a8e1babb34f5c66907a72e1.css integrity="sha256-kuE+6FssRYe5osQjveNYZbNfp0Sajhurs09cZpB6cuE=" media=screen>
+<script src=/beta/vendor/js/loadCSS.js></script>
+<script>loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons")</script>
+<script src=/beta/js/toc.js></script>
+<script>console.log("Hello from 'layouts/partials/extended_head.html'")</script>
 </head>
 <body>
-Redirecting to <a href="/old/manif/nantes_201907/nantes_201907.html">old website</a>
+<div id=app><div id=sideContainer class=side-container>
+<a class="a-block nav-head false" href=https://www.bioss-cnrs.fr/beta/>
+<div class=nav-title>
+GT Bioss
+</div>
+<div class=nav-subtitle>
+Groupe de travail sur la biologie systémique symbolique
+</div>
+</a>
+<div class=nav-link-list>
+<a class="a-block nav-link-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block nav-link-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block nav-link-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block nav-link-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block nav-link-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block nav-link-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+<div class=nav-footer>
+<p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div><div id=extraContainer class=extra-container>
+<div class=pagination>
+<a id=globalBackToTop class="pagination-action animated-visibility" href=#top :class="{ invisible: scrollY == 0 }">
+<i class="material-icons pagination-action-icon">
+keyboard_arrow_up
+</i>
+</a>
+<a type=button class=pagination-action id=darkModeToggleButton>
+<span class="material-icons pagination-action-icon" id=darkModeToggleIcon>
+dark_mode
+</span>
+</a>
+</div>
+</div>
+<div class=single-column-drawer-container id=drawer v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+<div class=drawer-content>
+<div class=drawer-menu>
+<a class="a-block drawer-menu-item false" href=/beta/about>
+À propos
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/seminaires/>
+Séminaires mensuels
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/categories/manifestations/>
+Manifestations
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/projets.html>
+Projets
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/membres.html>
+Membres
+</a>
+<a class="a-block drawer-menu-item false" href=/beta/contact.html>
+Contact
+</a>
+</div>
+</div>
+</div>
+<transition name=fade>
+<div id=drawer-mask v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if=isDrawerOpen v-on:click=toggleDrawer></div>
+</transition>
+<nav id=navBar class="navbar sticky-top navbar-light single-column-nav-container">
+<div id=navBackground class=nav-background></div>
+<div class="container container-narrow nav-content">
+<button id=nav_dropdown_btn class=nav-dropdown-toggle type=button v-on:click=toggleDrawer>
+<i class=material-icons>
+menu
+</i>
+</button>
+<a id=navTitle class=navbar-brand href=https://www.bioss-cnrs.fr/beta/>
+GT Bioss
+</a>
+<button type=button class=nav-darkmode-toggle id=darkModeToggleButton2>
+<i class=material-icons id=darkModeToggleIcon2>
+dark_mode
+</i>
+</button>
+</div>
+</nav>
+<div class=single-column-header-container id=pageHead v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+<a href=https://www.bioss-cnrs.fr/beta/>
+<div class=single-column-header-title>GT Bioss</div>
+<div class=single-column-header-subtitle>Groupe de travail sur la biologie systémique symbolique</div>
+</a>
+</div>
+<div id=content>
+<div id=streamContainer class=stream-container>
+<div class="post-list-container post-list-container-shadow">
+<div class=post>
+<div class=post-head-wrapper-text-only>
+<div class=post-title>
+Journées Bioss-Médecine-Personalisée
+<div class=post-subtitle>
+Les <strong>1 et 2 juillet 2019</strong> à Nantes
+</div>
+<div class=post-meta>
+</div>
+</div>
+</div>
+<div class=post-body-wrapper>
+<div class=post-body v-pre>
+<h3 id=informations-générales>Informations générales</h3>
+<p><strong>Date</strong> : 1er et 2 juillet (matin) 2019</p>
+<p><strong>Lieu</strong> : Salles A-B-C, Bâtiment 34, LS2N - Laboratoire des Sciences du
+Numérique de Nantes, Université de Nantes Faculté des Sciences et
+Techniques, 2 Chemin de la Houssinière, 44322 Nantes</p>
+<p><strong>Organisatrice</strong> : Carito GUZIOLOWSKI  </p>
+<p><strong>Presentation</strong> : The objective of the "BIOSS Personalized Medicine"
+meeting is to present and discuss informally numerical and mathematical
+modeling frameworks applied to understand medically important Human
+states. Talks are reassembled on discussing results that combine
+networks and (mathematical, probabilistic, logic, machine learning,
+among others) models. These models, integrate experimental or clinical
+observations and propose a computable representation of Human cellular,
+tissues, and clinical states related to unhealthy behaviors and cellular
+differentiation.</p>
+<h4 id=lundi-1er-juillet>Lundi 1er Juillet</h4>
+<p><strong>09h00 - 09h10</strong> - <strong>Accueil des participants</strong><br>
+<strong>09h10 - 09h15</strong> - <strong>Ouverture</strong><br>
+<strong>09h15 - 09h35</strong> - Maxime Folschette (LS2N, Nantes) - <em>Search of
+Therapeutic Targets on the Hepatocellular Carcinoma with Database
+Extraction and Graph Coloring Methods.</em><br>
+<strong>09h40 - 10h00</strong> - Lokmane Chebouba (LS2N, Nantes) - <em>Proteomics
+measurements combined with constraint programming for predicting
+treatment response in Acute Myeloid Leukemia cancer case.</em><br>
+<strong>10h00 - 10h45</strong> - Benno Schwikowski (Institut Pasteur, Paris) -
+<em>Interpretable machine learning to discover and map physiological
+activity using omics data.</em><br>
+<strong>10h45 - 11h15</strong> - <strong>Pause café</strong><br>
+<strong>11h15 - 12h00</strong> - Diana Mateus (LS2N, Nantes) - <em>Prognosis Prediction
+of Myeloma Patients with Random Survival Forests.</em><br>
+<strong>12h00 - 12h45</strong> - Herve Isambert (Institut Curie, Paris) - <em>Learning
+clinical networks from medical records based on information estimates in
+mixed-type data</em><br>
+<strong>12h45 - 14h00 - Pause déjeuner</strong><br>
+<br>
+<strong>14h00 - 14h45</strong> - Denis Thieffry (IBENS, Paris) - <em>Cooperation between
+T cell receptor and Toll-like receptor 5 signaling for CD4+ T cell
+activation.</em><br>
+<strong>14h45 - 15h30</strong> - Samuel Chaffron (LS2N, Nantes) - <em>Human gut
+microbiome co-activity networks in heath and disease.</em><br>
+<strong>15h30 - 15h45</strong> - <strong>Pause café</strong><br>
+<strong>15h45 - 16h30</strong> - Laurence Calzone (Institut Curie, Paris) - <em>Une
+méthodologie de personalisation des modèles Booléens pour tester des
+inhibiteurs, simples ou doubles, avec des réponses qui varient selon les
+profils de patients.</em><br>
+<strong>16h30 - 17h15</strong> - Celia Biane (IRISA, Rennes) - <em>Different approaches
+for the identification of perturbations in Boolean networks</em>\</p>
+<h4 id=mardi-2-juillet>Mardi 2 Juillet</h4>
+<p><strong>09h00 - 09h15</strong> - <strong>Accueil des participants</strong><br>
+<strong>09h15 - 10h00</strong> - Loic Paulevé (LaBRI, Bordeaux) - <em>Most Permissive
+Boolean Networks: Application to Inference of Models of Cellular
+Differentiation</em><br>
+<strong>10h00 - 10h45</strong> - Dimitri Meistermann (CRTI, LS2N, Nantes) - <em>The
+limit of cell specification concept: a lesson from scRNA-Seq on early
+human development.</em><br>
+<strong>10h45 - 11h15</strong> - <strong>Pause café</strong><br>
+<strong>11h15 - 12h00</strong> - Vera Pancaldi (CRCT, Toulouse) - <em>Quantification of
+tumour-infiltrating immune cells and beyond: modelling of cellular
+interactions in the tumour micro-environment.</em><br>
+<strong>12h00 - 12h15</strong> - <strong>Clôture et annonces</strong></p>
+<h3 id=abstracts>Abstracts</h3>
+<p><strong>Diana Mateus</strong> - <em>Prognosis Prediction of Myeloma Patients with Random
+Survival Forests.</em><br>
+Multiple myeloma (MM) is a bone marrow cancer that accounts for 10\% of
+all hematological malignancies. FDG PET Quantitative imaging has great
+importance for its treatment protocol guidance. In this study, we aim to
+develop a computer-assisted method based on PET imaging features towards
+assisting personalized diagnosis and treatment decisions for MM
+patients. We consider texture-based (radiomics) features on top of
+conventional (e.g. SUVmax) and clinical biomarkers, resulting in a large
+input/feature vector. Our proposed model relies on a two-stage Random
+Survival Forest (RFS) for both feature selection and prediction. The
+targeted variable for prediction is the progression-free survival(PFS),
+that is, the period of time until the first progression or relapse. We
+demonstrate the performance of the proposed approach in terms of C-index
+and final prognosis separation on a database of 66 patients who were
+part of the prospective multi-centric french IMAJEM study. Our results
+confirm the predictive value of radiomics for MM patients. Indeed,
+quantitative/heterogeneity image-based features reduce the error of the
+predicted progression.</p>
+<p><strong>Celia Biane</strong> - <em>Different approaches for the identification of
+perturbations in Boolean networks.</em> Boolean networks are discrete
+dynamical systems that are increasingly used in the field of systems
+biology to understand how complex cellular behaviors (phenotypes) emerge
+from the interaction of their molecular components. In this context, the
+interacting elements of the network represent diverse molecules whose
+local Boolean state is influenced by the state of other elements of the
+network, and the asymptotic states of the network represent the
+phenotype. During the last few years, different modelling and
+algorithmic approaches have been proposed for the identification of sets
+of local perturbations leading to a goal asymptotic behavior. During
+this presentation, I will propose different criteria of comparison of
+these approaches, show their application on a published model of bladder
+cancer and discuss their interpretation in the context of
+personalized/precision medicine.</p>
+<p><strong>Benno Schwikowski</strong> - <em>Interpretable machine learning to discover and
+map physiological activity using omics data.</em><br>
+The activation or deactivation of most physiological processes in health
+and disease can be expected to be reflected in coordinated changes at
+the molecular level. The discovery and mapping of physiological
+processes from transcriptomic data can thus be attempted, for example,
+using models that are based on the quantification of single RNAs, or
+linear combinations thereof. The underlying biology reality is often
+likely to be more complex than this, but limited data availability and
+limited computational resources make it difficult to go beyond these
+simple models while preserving statistical power and interpretability of
+the results.<br>
+In my talk, I will discuss two instances of new and carefully calibrated
+data analysis approaches that allowed us to discover and validate
+previously unknown associations between transcriptomic data and
+biomedically relevant physiology. Both models are highly interpretable
+and generic enough to be applied to a wide range omics analysis
+scenarios.<br>
+References: Gwinner et al. (2017),
+<a href=https://doi.org/10.1093/bioinformatics/btw676,>https://doi.org/10.1093/bioinformatics/btw676,</a> and Nikolayeva et al.
+(2018), <a href=https://doi.org/10.1093/infdis/jiy086>https://doi.org/10.1093/infdis/jiy086</a></p>
+<p><strong>Loic Paulevé</strong> - <em>Most Permissive Boolean Networks: Application to
+Inference of Models of Cellular Differentiation</em><br>
+Boolean networks are a commonly used framework to model dynamics of
+large-scale interaction networks. They aim at enabling to reason on
+temporal behaviours of networks without requiring precise knowledge on
+kinetics and interaction thresholds.<br>
+However, their usual interpretation can lead to wrong conclusions on
+their capability to reach certain behaviours. More precisely, refining a
+Boolean network model (with multivalued or ODEs for instance) can
+restrict some behaviours, but also create new ones, which are not
+predicted at the Boolean level.<br>
+This is problematic when inferring networks at the Boolean level, as it
+leads to reject actually valid models, hence introducing bias in the
+analysis of candidate models of cellular processes.<br>
+We introduce a new interpretation of Boolean networks which fixes this
+issue: with Most Permissive Boolean Networks, it is guaranteed that
+model refinements only restrict the capabilities of the model, thus
+allowing a correct abstract reasoning.<br>
+Moreover, Most Permissive Boolean Networks are also much more tractable
+to analyse and do not suffer from the state space explosion.<br>
+We illustrate their application to a scalable inference of models of
+cellular differentiation, which involve thorough constraints on the
+global dynamics of the network.</p>
+<p><strong>Dimitri Meistermann</strong> - <em>The limit of cell specification concept: a
+lesson from scRNA-Seq on early human development.</em> (joint work with
+Sophie Loubersac, Arnaud Reignier, Valentin Francois-Campion, Thomas
+Fréour, Jérémie Bourdon and Laurent David)<br>
+Recent technological advances such as single-cell RNAseq have allowed an
+unprecedented access into processes orchestrating human preimplantation
+development [1, 2]. However, the sequence of events which occur during
+human preimplantation development are still unknown. In particular,
+timing of the very first human lineage specification remains elusive.
+During this event, the morula cells are can acquire two fates: the
+trophectoderm that will give rise the placenta and inner cell mass that
+will give rise the fetus. We present a human preimplantation development
+model based on transcriptomic pseudotime modelling of four scRNAseq
+dataset, biologically validated by spatial information and precise
+time-lapse staging. In contrast to mouse [3], we show that
+trophectoderm / inner cell mass lineage specification in human is only
+detectable at the transcriptomic level at the blastocyst stage, just
+prior to expansion. By studying this delay, we show that cellular
+specification is a time window that begins with the establishment of
+cellular junctions, which polarize the embryo. These are the first
+factors that discriminates the two cell fates. The cell specification
+ends with the divergence of transcriptome profiles. For identifying the
+precise timings of this divergence, we have coupled the pseudotime
+modelling from Monocle2 [4] with several other tools. First, we
+performed an estimation of RNA velocity with velocyto [5]. This tool
+can retrieve the genes that are going to be down or upregulated in each
+cell, by processing the intron data that are contained into scRNAseq
+reads. We used WGCNA [6] for describing the waves of genes that paces
+human preimplantation development. By combining these tools, we found
+novel markers, validated by immunofluorescences. Their expression
+profile enables a precise staging of human preimplantation embryos, such
+as IFI16 which highlights establishment of epiblast and NR2F2 which
+appears at the transition from specified to mature trophectoderm.
+Strikingly, mature trophectoderm cells arise from the polar side, just
+after specification, supporting a model of polar trophectoderm cells
+driving trophectoderm maturation. Altogether, our study unravels the
+first lineage specification event in the human embryo and provides a
+browsable resource, based on d3.js, for mapping spatio-temporal events
+underlying human lineage specification.<br>
+References<br>
+[1] L. Yan et al., « Single-cell RNA-Seq profiling of human
+preimplantation embryos and embryonic stem cells », Nature Structural
+and Molecular Biology, vol. 20, no 9, p. 1131, sept. 2013.<br>
+[2] S. Petropoulos et al., « Single-Cell RNA-Seq Reveals Lineage and X
+Chromosome Dynamics in Human Preimplantation Embryos », Cell, vol. 165,
+no 4, p. 1012‐1026, mai 2016.<br>
+[3] E. Posfai et al., « Position- and Hippo signaling-dependent
+plasticity during lineage segregation in the early mouse embryo »,
+eLife, vol. 6.<br>
+[4] C. Trapnell et al., « The dynamics and regulators of cell fate
+decisions are revealed by pseudotemporal ordering of single cells »,
+Nature Biotechnology, vol. 32, no 4, p. 381‐386, mars 2014.<br>
+[5] G. La Manno et al., « RNA velocity of single cells », Nature, vol.
+560, no 7719, p. 494‐498, août 2018.<br>
+[6] P. Langfelder et S. Horvath, « WGCNA: an R package for weighted
+correlation network analysis », BMC Bioinformatics, vol. 9, p. 559,
+2008.\</p>
+<p><strong>Maxime Folschette</strong> - <em>Hepatocellular carcinoma (HCC) is the most
+widespread and lethal type of liver cancer today. Understanding the
+causes of its proliferation is thus a major challenge.</em><br>
+In this work, we extract new biological regarding HCC proliferation
+based on a signaling network and partial observations of its components.
+Our network is extracted from Kegg, although Pathway Commons and other
+databases are also candidates. The observations come from a differential
+analysis of gene expression between invasive and non-invasive tumor
+tissues. Based on this initial data, we run a prediction algorithm
+called Iggy which extracts new knowledge when the observations are
+sufficient. The results illustrate the statistical precision of our
+computational predictions and exposes new knowledge concerning the
+activity of three protein-complexes (NFKB1::BCL3, NFKB2::RELB and
+JUND::NACA) which are validated through functional analyses and
+literature review on HCC.</p>
+<p>Otoniel Rodríguez-Jorge, Linda A. Kempis-Calanis, Wassim Abou-Jaoudé,
+Darely Y. Gutiérrez-Reyna, Céline Hernandez, Oscar Ramirez-Pliego,
+Morgane Thomas-Chollier, Salvatore Spicuglia, Maria A. Santana, <strong>Denis
+Thieffry</strong> - <em>Cooperation between T cell receptor and Toll-like receptor
+5 signaling for CD4+ T cell activation</em><br>
+CD4+ T cells recognize antigens through their T cell receptors. However,
+additional signals involving co-stimulatory receptors, for example CD28,
+are required for proper T cell activation. Alternative co-stimulatory
+receptors have been proposed, including members of the Toll-like
+receptor family, such as TLR5 and TLR2. However, the molecular mechanism
+underlying this co-stimulatory function has not yet been fully
+elucidated.<br>
+Here, we report the generation of detailed molecular maps and logical
+models for the T cell receptor (TCR) and Toll-like receptor (TLR5)
+signalling pathways, along with a merged model accounting for
+cross-interactions. Furthermore, we validated the resulting model by
+analysing the responses of T cells to the activation of these pathways
+alone or in combination, in terms of CREB, AP-1 (c-Jun) and NF-kB (p65)
+activation.<br>
+Our merged model accurately reproduces the experimental results, showing
+that the activation of TLR5 can play a similar role to that of CD28,
+regarding AP-1, CREB and NF-кB activation, thereby, providing novel
+insights regarding cross-regulations of these pathways in CD4+ T cells.</p>
+<p><strong>Samuel Chaffron</strong> - <em>Human gut microbiome co-activity networks in
+heath and disease</em><br>
+Microbial communities inhabiting our intestinal tract impact and
+influence our nutrition, immunity and development. Today,
+High-Throughput Sequencing and functional genomics are revealing the
+under-explored diversity and complexity of these microbial ecosystems.
+Limited by the fact that most microbes can hardly be isolated and
+cultivated in lab-controlled environments, we are just starting to grasp
+the complexity and diversity of microbial interactions. Even when
+successful, laboratory experiments inherently lose valuable information
+about the richness and diversity of community functioning and
+interactions in situ. Today, large scale environmental surveys of
+microbial communities across Earth's ecosystems (e.g. Tara Oceans
+expeditions, integrative Human Microbiome Project) gathered large
+volumes of meta-omic and contextual data that are enabling the
+reconstruction of genomes of uncultivated microbial species or
+Metagenome-Assembled Genomes (MAGs). While classical co-occurrence
+analyses enable to predict interactions between newly identified
+microbes, these approaches are inherently limited since true biotic
+interactions can hardly be disentangle from abiotic (environmental)
+effects. Here, we developed a trait-based approach to enrich
+co-occurring information and uncover putative biotic interactions among
+human gut MAGs. Genomic and growth traits can directly be inferred from
+MAGs and meta-omics data. Here, co-growth signals across individuals are
+used to reveal positive and negative putative interactions between
+co-occurring microbes. In addition, the functional content of MAGs and
+the reconstruction of their metabolism will be used to predict and model
+potential microorganismsâ€™ dependencies. Inferring and combining
+(meta-)genomic traits in a global approach can help to identify
+consortia of microbes and pave the way towards the functional
+understanding and the metabolic modeling of their interactions in health
+and disease.</p>
+<p><strong>Laurence Calzone</strong> - <em>Une méthodologie de personalisation des modèles
+Booléens pour tester des inhibiteurs, simples ou doubles, avec des
+réponses qui varient selon les profils de patients</em><br>
+Logical models of cancer pathways are typically built by mining the
+literature for relevant experimental observations or by inquiring
+pathway databases. They are usually generic as they apply for large
+cohorts of individuals. As a consequence, they generally do not capture
+the heterogeneity of patient tumours and their therapeutic responses.
+After introducing our approach for constructing logical models and
+simulating them stochastically, I will present the methodology for
+personalising logical models to data and show how these models can be
+used for testing the effect of drugs.</p>
+<p><strong>Lokmane Chebouba</strong> -<em>Proteomics measurements combined with constraint
+programming for predicting treatment response in Acute Myeloid Leukemia
+cancer case</em><br>
+The use of data from high-throughput technologies to target drugs has
+been widespread in recent decades. Several approaches have been applied
+to biomedical data to detect disease-specific proteins and genes to
+better target drugs. We propose a new method for discriminating the
+response of patients with acute myeloid leukemia (AML) to treatments.
+The proposed approach uses proteomic data and the prior knowledge
+network to predict the results of cancer treatment by discovering the
+different Boolean networks specific to each type of treatment response.<br>
+The results are encouraging and demonstrate the benefit of our approach
+to distinguish patient groups with different response to treatment. In
+particular each treatment response group is characterized by a
+predictive model in the form of a signaling Boolean network. This model
+describes regulatory mechanisms which are specific to each response
+group. This mechanistic and predictive model also allows us to classify
+new patients data into the two different patient response groups.</p>
+<hr width=100% id=EOF>
+<p style=color:#777>Dernière modification le 01/07/2019</p>
+</div>
+</div>
+<nav class=post-pagination>
+<a class=newer-posts href=https://www.bioss-cnrs.fr/beta/manif/jnbioss_201911/jnbioss_201911.html>
+Suivant<br>Journée annuelle du GT Bioss (2019, 5e édition)
+</a>
+<a class=older-posts href=https://www.bioss-cnrs.fr/beta/manif/biossia_201905/biossia201905.html>
+Précédent<br>Journées Bioss-IA (3e édition)
+</a>
+</nav>
+<div class=post-comment-wrapper>
+</div>
+</div>
+</div>
+</div>
+</div><div id=single-column-footer><p><a href=https://www.bioss-cnrs.fr/beta/index.xml>Flux RSS</a></p>
+Basé sur le
+Theme Hugo <a href=https://github.com/amazingrise/hugo-theme-diary>Diary</a> par <a href=https://amazingrise.net>Rise</a>
+<br>
+Adapté de <a href=https://mak1t0.cc/ target=_blank rel="noreferrer noopener">Makito</a>'s <a href=https://github.com/SumiMakito/hexo-theme-journal/ target=_blank rel="noreferrer noopener">Journal.</a> <br>
+<br>
+&copy;
+GT Bioss.
+</div>
+</div>
+<script src=/beta/js/journal.js></script>
 </body>
 </html>

@@ -1,0 +1,168 @@
+\documentclass[10pt, a4paper]{article} 
+
+\usepackage[margin=25mm,headheight=10mm,footskip=15mm]{geometry}
+%\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage[british]{babel}
+%\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage[svgnames]{xcolor}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage{mathrsfs}
+\usepackage{fancyhdr}
+
+\DeclareGraphicsExtensions{.png}
+
+\renewcommand{\floatpagefraction}{0.90}
+
+\makeatletter
+\renewcommand{\section}{\@startsection {section}{1}{\z@}%
+             {-3.5ex \@plus -1ex \@minus -.2ex}%
+             {.3ex \@plus.2ex}%
+             {\centering\normalfont\large\bfseries}}
+\makeatother
+
+\makeatletter
+\renewcommand{\subsection}{\@startsection {section}{2}{\z@}%
+             {-3.5ex \@plus -1ex \@minus -.2ex}%
+             {.3ex \@plus.2ex}%
+             {\centering\normalfont\normalsize\bfseries}}
+\makeatother
+
+\newcolumntype{M}[1]
+	{>{#1\hspace{0pt}\arraybackslash}m{0.5\textwidth}}
+
+\newcommand{\BB}{\mathbb{B}}
+\newcommand{\Bn}{\mathbb{B}^n}
+
+\pagestyle{fancy} 
+\DeclareGraphicsExtensions{.png}
+
+% Marges
+
+\renewcommand{\floatpagefraction}{0.90}
+
+% En-tête de page
+\renewcommand{\headrulewidth}{1pt}
+\fancyhead{\includegraphics[height=13mm]{logoIM.png}\hfill\includegraphics[height=15mm]{logoCNRS.png}\hfill\includegraphics[height=12mm]{logoBIM.pdf}}
+\fancyfoot{}
+
+
+\begin{document}
+\vspace*{4mm}
+\centerline{\Large \bf Journées annuelles du GT Bioss}\bigskip
+\centerline{(\large \bf GDR IM -- GDR BIM)}
+\centerline{\large \bf 1er et 2 juillet 2016}\bigskip
+
+\centerline{
+	\begin{tabular}{p{.3\textwidth}p{.3\textwidth}p{.3\textwidth}}
+		& \hrulefill &
+	\end{tabular}
+}\medskip\medskip
+
+\section*{Programme}\medskip\medskip\medskip
+
+\subsection*{\textcolor{DarkGreen}{Vendredi 1er juillet}}\medskip
+
+\begin{tabular}{p{.15\textwidth}p{.85\textwidth}}
+	09h00 - 09h30 & \textbf{Accueil}\\[2mm]
+	09h30 - 09h45 & \textbf{Introduction des journées}\\[2mm]
+	09h45 - 10h30 & \textbf{Grégory Batt} -- \emph{\textbf{Predicting long-term effects of 
+		apoptosis-inducing drug treatments: coupling signal transduction pathways with 
+		stochastic protein turnover models}}\\[2mm]
+	10h30 - 11h00 & Bertrand Miannay -- Identification des voies de signalisation impliquées 
+		dans le myélome multiple par programmation par contrainte\\[1mm]
+	11h00 - 11h30 & Arnaud Bonnaffoux -- Toward a dynamic multi-scale/level approach for 
+		gene regulatory network inference\\[1mm]
+	11h30 - 12h00 & Nicolas Schabanel -- Folding Turing is hard but feasible\\[2mm]
+	12h00 - 13h30 & \textbf{Pause déjeuner}\\[2mm]
+	13h30 - 14h15 & \textbf{Marie-France Sagot} -- \emph{\textbf{Species interactions from a 
+		metabolism perspective}}\\[2mm]
+	14h15 - 14h45 & Nils Giordano -- Dynamical allocation of cellular resources as an optimal 
+		control problem\\[1mm]
+	14h45 - 15h15 & Victorien Delannée -- A modeling approach to evaluate the balance 
+		between bioactivation and detoxification of MeIQx in human hepatocytes\\[2mm]
+	15h15 - 15h45 & \textbf{Discussion Bioss / GDR}\\[2mm]
+	15h45 - 16h15 & \textbf{Pause}\\[2mm]
+	16h15 - 16h45 & Hugues Berry -- Estimating the effects of spatial non-homogeneities in 
+		intracellular diffusion-reactions\\[1mm]
+	16h45 - 17h15 & Dan Goreac -- Hybrid designing using stochastic 
+		backward equations\\[1mm]
+	17h15 - 17h45 & Guillaume Madelaine -- Structural simplifications of reaction networks: the 
+		confluence problem\\[1mm]
+	17h45 - 18h15 & Ferdinanda Camporesi -- Context-sensitive flow analyses: a hierarchy of 
+		model reductions
+\end{tabular}\medskip
+
+\subsection*{\textcolor{DarkGreen}{Samedi 2 juillet}}\medskip\medskip
+
+\begin{tabular}{p{.15\textwidth}p{.85\textwidth}}
+	09h00 - 09h45 & \textbf{Marcelline Kaufman} -- \emph{\textbf{On multistationarity in 
+		chemical reaction networks}}\\[2mm]
+	09h45 - 10h15 & Kévin Perrot -- On the flora of asynchronous locally non-monotonic 
+		Boolean networks\\[1mm]
+	10h15 - 10h45 & Élisabeth Remy -- Discrete dynamics of compound regulatory 
+		circuits\\[2mm]
+	10h45 - 11h00 & \textbf{Pause}\\[2mm]
+	11h00 - 11h30 & Loïc Paulevé -- Around reachability in automata networks\\[1mm]
+	11h30 - 12h00 & Emna Ben Abdallah -- Inference of biological regulatory networks from 
+		time series data\\[1mm]
+	12h00 - 12h30 & Adrien Richard -- Points fixes dans les réseaux booléens monotones
+\end{tabular}
+
+\pagebreak
+
+\vspace*{4mm}\section*{Participants inscrits}\medskip\medskip
+
+\centerline{
+	\begin{tabular}{llll}
+		Jalouli & ACHREF & & Université de Limoges\\
+		Émilie & ALLART & CRISTAL & Université de Lille\\
+		Adel Amar & AMOURI & Dpt. de biologie & Université d'Oran\\
+		Emna & BEN ABDALLAH & IRCCyN & École centrale de Nantes\\
+		Adrien & BASSO-BLANDIN & LIP & ENS-Lyon\\
+		Grégory & BATT & Lifeware & INRIA Saclay\\
+		Guillaume & BEAUMONT & IPS2 & Université Paris Sud\\
+		Emmanuelle & BECKER & IRSET & Université de Rennes\\
+		Hugues & BERRY & Beagle & INRIA Lyon\\
+		Arnaud & BONNAFFOUX & LBMC & ENS-Lyon\\
+		Ferdinanda & CAMPORESI & DIENS & ENS\\
+		Thomas & COKELAER & Biomics & Institut Pasteur\\
+		Victorien & DELANNÉE & IRISA & Université de Rennes\\
+		Ronan & DUCHESNE & LBMC & ENS-Lyon\\
+		Maxime & FOLSCHETTE & I3S & Université de Nice - Sophia Antipolis\\
+		Enrico & FORMENTI & I3S & Université de Nice - Sophia Antipolis\\
+		Olivier & GANDRILLON & LBMC & CNRS Lyon\\
+		Nils & GIORDANO & IBIS & INRIA Grenoble\\
+		Dan & GOREAC & LAMA & Université Paris-Est Marne-la-Vallée\\
+		Carito & GUZIOLOWSKI & IRCCyN & École centrale de Nantes\\
+		Pierre & GUILLON & I2M & CNRS Marseille\\
+		Russ & HARMER & LIP & ENS-Lyon\\
+		Ulysse & HERBACH & LBMC & ENS-Lyon\\		
+		Marcelline & KAUFMAN & Dpt. de chimie physique & Université libre de Bruxelles\\
+		& & \hspace*{6.3mm}et biologie théorique & \\
+		Cédric & LHOUSSAINE & CRISTAL & Université de Lille\\
+		Guillaume & MADELAINE & CRISTAL & Université de Lille\\
+		Bertrand & MIANNAY & IRCCyN & École centrale de Nantes\\
+		Jean-Michel & MULLER & LIP & CNRS Lyon\\
+		Loïc & PAULEVÉ & LRI & CNRS Orsay\\
+		Kévin & PERROT & LIF & Université d'Aix-Marseille\\
+		Sylvain & PRIGENT & Sysbio & Université de Chalmers\\
+		Élisabeth & REMY & I2M & CNRS Marseille\\
+		Adrien & RICHARD & I3S & CNRS Nice - Sophia Antipolis\\
+		Marie-France & SAGOT & ERABLE & INRIA Lyon\\
+		Nicolas & SCHABANEL & IRIF & CNRS Paris\\
+		Sylvain & SENÉ & LIF & Université d'Aix-Marseille\\
+		Anne & SIEGEL & IRISA & CNRS Rennes\\
+		Laurent & TRILLING & TIMC-IMAG & Université de Grenoble\\
+		Jean-Yves & TROSSET & BIRL & SupBioTech
+	\end{tabular}
+}
+
+\end{document}
