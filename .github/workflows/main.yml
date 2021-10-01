@@ -16,13 +16,12 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          ref: main
+          ref: master
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           extended: true
-          
 
       - name: Build
         run: hugo --minify
