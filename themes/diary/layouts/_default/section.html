@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+
+    <div class="post-list-container post-list-container-shadow">
+        
+
+            <a class="a-block">
+                <div class="post-item-wrapper post-item-wrapper-no-hover">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title post-item-title-small year">
+                            {{.Title}}
+                            </div>
+                            {{.Content}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        {{ range .Paginator.Pages.GroupByDate "2006" }}
+            {{ range .Pages }}
+            <a href="{{ .RelPermalink }}" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                {{.Title}}
+                            </div>
+                            {{ partial "post-item-meta.html" . }}
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {{ end }}
+        {{ end }}
+    </div>
+
+
+{{ end }}

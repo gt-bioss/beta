@@ -1,0 +1,69 @@
+baseURL = "https://www.bioss-cnrs.fr/beta/"
+DefaultContentLanguage = "fr" # Theme's display language, supports: en, fr, zh, zh-hant
+languageCode = "fr-FR"
+title = "GT Bioss"
+copyright = "GT Bioss."
+theme = "diary"
+# googleAnalytics = "UA-123-45"
+buildFuture = true
+paginate = 25
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "perldoc"
+    tabWidth = 4
+
+[params]
+subtitle = "Groupe de travail sur la biologie systémique symbolique"
+enableGitalk = false
+enableAutoDarkMode = false
+
+# Twitter Card and Open Graph settings
+enableOpenGraph = true
+enableTwitterCards = false
+title = "GT BIOSS" # will set 'og:site_name'
+description = "Groupe de travail sur la biologie systémique symbolique"
+intro = "test"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+
+[[menu.main]]
+url = "/about"
+name = "À propos"
+weight = 1
+
+[[menu.main]]
+url = "/seminaires/"
+name = "Séminaires mensuels"
+weight = 2
+
+[[menu.main]]
+url = "/categories/manifestations/"
+name = "Manifestations"
+weight = 3
+
+[[menu.main]]
+url = "/projets.html"
+name = "Projets"
+weight = 6
+
+[[menu.main]]
+url = "/membres.html"
+name = "Membres"
+weight = 9
+
+[[menu.main]]
+url = "/contact.html"
+name = "Contact"
+weight = 10
+
