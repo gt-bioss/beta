@@ -28,9 +28,9 @@ La journée se déroulera entre 9h et 17h.
 Envoyez vos propositions d'exposé à [contact@bioss-cnrs.fr](mailto:contact@bioss-cnrs.fr).
 
 Orateurs invités:
-* **Alberto Valdeolivas** (Roche Pharma Research and Early Development, Pharmaceutical Sciences, Roche Innovation Center Basel, Basel, Switzerland)
-* **Deliphine Ropers** (Inria Grenoble – Rhône-Alpes)
-* **Thomas Guillemaud** et **Celine Scornavacca** (Peer Community In - PCI)
+* **[Alberto Valdeolivas](https://scholar.google.fr/citations?user=9gqm7GYAAAAJ)** (Roche Pharma Research and Early Development, Pharmaceutical Sciences, Roche Innovation Center Basel, Basel, Switzerland)
+* **[Delphine Ropers](https://team.inria.fr/ibis/delphine-ropers/)** (Inria Grenoble – Rhône-Alpes)
+* **Thomas Guillemaud** et **Celine Scornavacca** ([Peer Community In - PCI](https://mcb.peercommunityin.org/))
 
 
 ### Résumés
