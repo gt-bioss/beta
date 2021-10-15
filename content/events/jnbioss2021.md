@@ -7,7 +7,7 @@ categories: "Manifestations"
 
 ## Informations générales
 
-**Date** : le 23 novembre 2021 de 9h30 à 17h30
+**Date** : le 23 novembre 2021 de 9h00 à 17h00
 
 **Lieu** : Université Claude Bernard, Campus de la Doua, Lyon.
 
